@@ -154,7 +154,13 @@ def enrich(articles: list, account_id: str, api_token: str, *,
             break
         except Exception as exc:
             # No tokens, request body, article headlines or provider errors dumped.
-            print(f'AI guide skipped ({type(exc).__name__})', file=sys.stderr)
+                        if isinstance(exc, RuntimeError) and (
+                str(exc).startswith('Workers AI HTTP status ')
+                or str(exc) == 'Workers AI returned unsuccessful response'
+            ):
+                print(f'AI guide skipped ({exc})', file=sys.stderr)
+            else:
+                print(f'AI guide skipped ({type(exc).__name__})', file=sys.stderr)
     return completed, len(targets)
 
 
