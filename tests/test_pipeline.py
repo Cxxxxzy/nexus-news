@@ -32,6 +32,13 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(len(merged), 2)
         self.assertTrue(all(not x['demo'] for x in merged))
 
+    def test_ai_question_is_preserved_when_headline_is_refetched(self):
+        items = module.parse_feed((ROOT/'tests/fixtures/sample_feed.xml').read_bytes(), '国際', 'Test RSS')
+        old = [dict(items[0], ai_question='何を元記事で確認すべきでしょうか？', ai_provider='Cloudflare Workers AI', ai_label='見出しから考える確認ポイント（本文未確認）')]
+        result = module.merged_items(items, old)
+        same = next(a for a in result if a['id'] == items[0]['id'])
+        self.assertEqual(same['ai_question'], '何を元記事で確認すべきでしょうか？')
+
     def test_atom(self):
         xml = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Atom news headline</title><link href="https://example.com/a" rel="alternate"/><updated>2026-10-21T12:00:00Z</updated></entry></feed>'''
         self.assertEqual(len(module.parse_feed(xml, '科学', 'Atom Source')), 1)

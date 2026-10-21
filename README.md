@@ -1,8 +1,10 @@
-# NEXUS NEWS — 総合ニュースサイト初期版 v0.1
+# NEXUS NEWS — 総合ニュースサイト無料AI編集補助版 v0.2
 
 日本語の総合ニュースポータル。ニュース見出し・公開日時・出典・元記事リンクをRSSから収集し、静的なWebサイトを毎日更新します。
 
-> **ステータス**: サイト・更新スクリプト・GitHub Actionsの初期実装済み。公開と本番RSS取得は未実施。最初はデモ記事です。AI独自記事の自動公開はまだ実装していません。
+> **ステータス**: ニュース取得・GitHub Pagesへの公開機能は実運用済み。v0.2ではCloudflare Workers AI（無料枠）の任意機能を追加しました。APIトークン未設定では今までどおりRSSだけ更新します。ニュース本文を検証済みの独自解説はまだ実装していません。
+
+**無料AIを有効化する最初の手順は [`SETUP_FREE_AI.md`](SETUP_FREE_AI.md) をご覧ください。**
 
 ## 主な機能
 
@@ -13,7 +15,7 @@
 - RSS取得、URLとタイトルによる重複排除、最大120件保存
 - 毎日06:17 JST目安の自動更新 / GitHub Pages公開用Actions
 - 投稿データと公開ファイルだけをビルド出力。APIキー等は公開しない
-- AIオプション：見出しベースの**読者向け確認質問**生成（記事本文の要約ではない）
+- AIオプション：Cloudflare Workers AI無料枠による**見出しベースの読者向け確認質問**生成（記事本文の要約ではない）
 
 ## 1. すぐにローカル表示（Windows）
 
@@ -69,30 +71,17 @@ GitHub Actionsの定期ジョブは正確な時刻に開始する保証があり
 
 **注意：** GitHub Pagesは公開サイトです。公開前に運営者名・問い合わせ先・プライバシー表示・著作権対応方針などを確認してください。
 
-## 5. AI編集サポート（任意）
+## 5. 無料AI編集サポート（任意）
 
-初期状態ではAI APIを呼びません。AIを使う場合は、GitHubのリポジトリで：
+**OpenAIの有料API接続は削除しました。** 本バージョンはCloudflare Workers FreeプランのREST APIに対応し、無料枠で記事の確認ポイントを生成します。AIは本文を取得しません。機能はデフォルト無効なので、GitHubにコードをアップロードしただけではAPI料金が発生しません。
 
-- **Settings → Secrets and variables → Actions → Secrets**: `OPENAI_API_KEY` を設定
-- 同ページの **Variables**: `AI_EDITOR_ENABLED` を `1` にする
-- 必要なら `OPENAI_MODEL` を設定（省略時は `gpt-5.5`）
+GitHub Secretsの設定、無料プラン確認、動作テストまでの日本語手順は **[`SETUP_FREE_AI.md`](SETUP_FREE_AI.md)** を参照してください。
 
-Actionsがニュース取得後、最大4件の見出しについてOpenAI APIに**記事を読む際の確認ポイント（疑問文）**を生成させます。記事本文がない状態での要約・事実認定は行いません。API使用料はChatGPTプランとは別です。
-
-ローカルで有効化する場合：
-
-```bat
-py -3 -m pip install "openai>=2,<4"
-set OPENAI_API_KEY=（ここに自分のAPIキー）
-set AI_EDITOR_ENABLED=1
-py -3 scripts\update_news.py
-```
-
-APIキーをコードやGitHubの公開ファイルに書かないでください。
+**注意:** Workers Freeで提供される1日あたりの無料割当は現時点では10,000 Neuronsです。提供条件変更・容量制限・レート制限があり、無料枠を超えるとAI処理は停止します。Workers Paidにアップグレードしないでください。
 
 ## 6. 将来の開発ロードマップ
 
-- v0.2: ニュースソース別の信頼度管理、配信エラー通知、古いデータの表示警告、カテゴリ配信量調整
+- v0.2: Cloudflareの無料AIによる読者向け確認質問（今回追加）
 - v0.3: 編集者レビュー画面、下書き / 承認 / 公開ワークフロー、訂正機能
 - v0.4: 記事本文の権利ある情報へのアクセスを前提とする、出典付きAI解説記事
 - v0.5: アクセス解析、SEO、改善提案の定期レポート、プレビューと承認付きUI更新
@@ -103,6 +92,7 @@ AIが本番サイトのプログラムを無制限に自己改変する設計は
 
 ```text
 nexus-news-starter/
+├── SETUP_FREE_AI.md      無料AIの導入手順
 ├── PREVIEW.html           1ファイルのオフライン表示デモ
 ├── index.html             ホームページ
 ├── styles.css             PC/スマホ対応のデザイン
@@ -112,7 +102,8 @@ nexus-news-starter/
 ├── assets/favicon.svg     アイコン
 ├── data/news.json         現在の記事データ（初期はデモ）
 ├── config/sources.json    RSS情報源
-├── scripts/update_news.py RSS取得・重複削除・任意AI補助
+├── scripts/update_news.py RSS取得・重複削除・AIメモ保存
+├── scripts/free_ai_editor.py Cloudflareの任意AI確認ポイント
 ├── scripts/build_site.py  公開用ファイル生成
 ├── scripts/build_preview.py オフラインプレビュー生成
 ├── tests/                 単体テストとオフライン用RSS

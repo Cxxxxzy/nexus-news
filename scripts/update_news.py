@@ -6,7 +6,7 @@ Usage:
   python scripts/update_news.py --fixture tests/fixtures/sample_feed.xml --category 国際
   python scripts/update_news.py --dry-run
 
-Optional: OPENAI_API_KEY + AI_EDITOR_ENABLED=1 + pip install openai.
+Optional free AI guides: scripts/free_ai_editor.py (separate step).
 """
 from __future__ import annotations
 
@@ -115,48 +115,17 @@ def fetch_bytes(url: str) -> bytes:
         return resp.read(1_800_000)
 
 
-def make_note(client, title, category, source, model):
-    """AI-generated reading question only; NOT a factual summary or a reported article."""
-    response = client.responses.create(
-        model=model,
-        instructions=(
-            'あなたはニュース見出しの読書ガイド編集者です。与えられるのは記事本文ではなく見出しだけです。'
-            '見出しからは確認できない事実、人数、金額、因果関係を一切補わないでください。'
-            '見出しを読む人にとって有益な確認ポイントを、日本語の疑問文1つ(75字以内)で返してください。'
-            '質問だけを返し、回答・推測・引用は書かないでください。'
-        ),
-        input=f'カテゴリ: {category}\n媒体: {source}\n見出し: {title}',
-        max_output_tokens=110,
-    )
-    question = clean(response.output_text, 75)
-    if question and not any(c in question for c in '\n<>'):
-        return 'AIによる確認ポイント（記事本文は未確認）：' + question
-    return None
-
-
-def enrich_with_ai(items):
-    if os.getenv('AI_EDITOR_ENABLED') != '1' or not os.getenv('OPENAI_API_KEY'):
-        return
-    try:
-        from openai import OpenAI
-        client = OpenAI(timeout=25.0, max_retries=1)
-        model = (os.getenv('OPENAI_MODEL') or 'gpt-5.5')
-        limit = max(0, min(6, int(os.getenv('AI_MAX_ITEMS', '4'))))
-        for a in items[:limit]:
-            try:
-                question = make_note(client, a['title'], a['category'], a['source'], model)
-                if question:
-                    a['summary'] = question
-                    a['ai_note'] = True
-            except Exception as exc:
-                print(f'AI failed for {a["id"]}: {exc}', file=sys.stderr)
-    except (ImportError, ValueError) as exc:
-        print(f'AI disabled: {exc}', file=sys.stderr)
-
-
 def merged_items(new_items, old_items):
     """Prefer fresh headline, preserve older records and ensure no demo leaks."""
-    combined = new_items + [a for a in old_items if not a.get('demo')]
+    # Retain previously generated AI reading points across daily RSS refreshes.
+    previous_by_id = {a.get('id'): a for a in old_items if isinstance(a, dict) and not a.get('demo')}
+    for a in new_items:
+        prev = previous_by_id.get(a.get('id'))
+        if prev and prev.get('ai_question') and a.get('title') == prev.get('title'):
+            for field in ('ai_question', 'ai_label', 'ai_provider'):
+                if field in prev:
+                    a[field] = prev[field]
+    combined = new_items + [a for a in old_items if isinstance(a, dict) and not a.get('demo')]
     unique = {}
     seen_title = set()
     for a in combined:
@@ -198,7 +167,6 @@ def main(argv=None):
     if not successes or not new_items:
         print('ERROR: no valid RSS items. Existing data not overwritten.', file=sys.stderr)
         return 1
-    enrich_with_ai(new_items)
     articles = merged_items(new_items, old.get('articles', []))
     if not articles:
         print('ERROR: merge produced no valid articles.', file=sys.stderr)
