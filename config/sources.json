@@ -1,0 +1,13 @@
+{
+  "note": "日本向けGoogleニュースRSSのカテゴリ別URL。利用条件と稼働状況を公開前に確認してください。変更したい場合はURLを差し替えます。",
+  "feeds": [
+    {"category":"国内","name":"Google ニュース / 国内","url":"https://news.google.com/rss/headlines/section/topic/NATION?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"国際","name":"Google ニュース / 国際","url":"https://news.google.com/rss/headlines/section/topic/WORLD?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"政治","name":"Google ニュース / 政治","url":"https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB&hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"経済","name":"Google ニュース / ビジネス","url":"https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"テクノロジー","name":"Google ニュース / テクノロジー","url":"https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"科学","name":"Google ニュース / 科学","url":"https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"スポーツ","name":"Google ニュース / スポーツ","url":"https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ja&gl=JP&ceid=JP:ja"},
+    {"category":"エンタメ","name":"Google ニュース / エンタメ","url":"https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ja&gl=JP&ceid=JP:ja"}
+  ]
+}

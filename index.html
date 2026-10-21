@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="NEXUS NEWS — 国内・国際・経済・テクノロジーなど、ニュースの見出しと出典を整理して届けるニュースポータル。">
+  <title>NEXUS NEWS | 世界の動きが、ここでつながる。</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="announcement" id="announcement" hidden><span class="pill-demo">DEMO</span> 現在はデモ記事を表示中です。実際のニュースは最初の収集実行後に表示されます。</div>
+  <header class="site-header">
+    <div class="header-main container">
+      <a href="./" class="brand" aria-label="NEXUS NEWS ホーム">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-wordmark">NEXUS<span>NEWS</span><small>INFORMATION, REIMAGINED.</small></span>
+      </a>
+      <div class="header-right">
+        <span class="today-date" id="today-date"></span>
+        <span class="header-divider" aria-hidden="true"></span>
+        <button class="icon-button" id="search-open" title="検索" aria-label="検索を開く"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.5 15.5 5 5"/></svg></button>
+        <button class="icon-button" id="theme-toggle" title="表示テーマを変更" aria-label="表示テーマを変更"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button>
+      </div>
+    </div>
+    <nav class="primary-nav" aria-label="カテゴリー">
+      <div class="nav-inner container" id="category-nav">
+        <button class="nav-link active" data-category="all">すべて</button>
+        <button class="nav-link" data-category="国内">国内</button>
+        <button class="nav-link" data-category="国際">国際</button>
+        <button class="nav-link" data-category="政治">政治</button>
+        <button class="nav-link" data-category="経済">経済</button>
+        <button class="nav-link" data-category="テクノロジー">テクノロジー</button>
+        <button class="nav-link" data-category="科学">科学</button>
+        <button class="nav-link" data-category="スポーツ">スポーツ</button>
+        <button class="nav-link" data-category="エンタメ">エンタメ</button>
+        <button class="nav-link saved-nav" data-category="saved">★ 保存した記事</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <section class="headline-bar" aria-label="サイトについて"><span class="live-indicator"><span></span> DAILY EDITION</span><p>情報を追う。その先の、理解へ。</p><span class="update-note" id="update-note">データを読み込み中</span></section>
+
+    <section class="top-section" id="top-section">
+      <div class="section-eyebrow"><span>THE DAILY BRIEF</span><span class="line"></span><span id="issue-date">TODAY'S EDITION</span></div>
+      <div class="lead-grid">
+        <div class="feature-card" id="feature-card"><div class="skeleton hero-skeleton"></div></div>
+        <div class="side-features" id="side-features"><div class="skeleton side-skeleton"></div><div class="skeleton side-skeleton"></div></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="stories-layout">
+        <div class="stories-main">
+          <div class="section-head"><div><span class="section-kicker">LATEST STORIES</span><h1 id="stories-heading">最新ニュース<span class="heading-accent">.</span></h1></div><span class="story-count" id="story-count"></span></div>
+          <div class="filter-row"><span class="filter-label">並び替え</span><button id="sort-latest" class="small-chip selected">新しい順</button><button id="sort-oldest" class="small-chip">古い順</button><span class="filter-spacer"></span><span class="coverage" id="coverage"></span></div>
+          <div id="stories-grid" class="stories-grid" aria-live="polite"><div class="skeleton card-skeleton"></div><div class="skeleton card-skeleton"></div><div class="skeleton card-skeleton"></div></div>
+          <div id="empty-state" class="empty-state" hidden><div class="empty-icon">⌕</div><h2>記事が見つかりませんでした</h2><p>検索キーワードやカテゴリーを変更してみてください。</p><button id="clear-filters" class="outline-button">すべての記事を見る →</button></div>
+          <div class="load-wrap"><button id="load-more" class="outline-button" hidden>もっと記事を見る <span>↓</span></button></div>
+        </div>
+        <aside class="sidebar">
+          <div class="sidebar-box about-box"><span class="section-kicker">ABOUT NEXUS</span><h2>ニュースの先にある<br><em>「なぜ」を考える。</em></h2><p>国内外のニュースを、分野ごとに整理。出典へのリンクとともに、いま起きていることを見渡すための情報ポータルです。</p><div class="about-signature">NEXUS <span>NEWS</span></div></div>
+          <div class="sidebar-box topic-box"><span class="section-kicker">EXPLORE TOPICS</span><h2>注目のカテゴリー</h2><div id="topic-list" class="topic-list"></div></div>
+          <div class="sidebar-box transparency-box"><span class="section-kicker">EDITORIAL POLICY</span><h2>透明性を大切に。</h2><p>見出しと出典を明記し、元記事へのアクセスを優先します。記事本文の取得や事実確認ができていない情報は、AIによる断定的な解説に使用しません。</p><a href="./policy.html">編集方針を見る ↗</a></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="newsletter"><div><span class="section-kicker">STAY INFORMED</span><h2>世界は動く。視点は深まる。</h2><p>毎日更新を目指すニュースダイジェスト。新しい情報との出会いを、ここから。</p></div><a href="#main" class="newsletter-link">今日の記事を読む ↗</a></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><div class="footer-logo">NEXUS<span>NEWS</span><span class="footer-dot">.</span></div><p>情報を追う。その先の、理解へ。</p></div><div class="footer-links"><a href="./policy.html">編集方針</a><a href="./privacy.html">プライバシー</a><a href="./">トップに戻る</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> NEXUS NEWS. All rights reserved.</span><span>Curated with care. Read the original sources.</span></div></footer>
+
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-header"><strong>記事を検索</strong><button id="search-close" class="close-button" aria-label="検索を閉じる">×</button></div><label for="search-input">キーワードを入力</label><input id="search-input" type="search" placeholder="ニュースやキーワードを検索..." autocomplete="off"><p>記事のタイトル、出典、カテゴリから検索します。</p></dialog>
+  <dialog id="article-dialog" class="article-dialog"><div class="dialog-article-head"><span class="section-kicker">NEXUS NEWS / ARTICLE</span><button id="article-close" class="close-button" aria-label="記事詳細を閉じる">×</button></div><div id="article-body"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-10-21T00:00:00+09:00",
+  "demo": true,
+  "articles": [
+    {"id":"demo-01","title":"世界の重要ニュースを、ひとつの画面で見渡す","summary":"表示確認用デモ記事。自動収集後は、実際のニュース見出しと元記事へのリンクに置き換わります。","category":"国際","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T06:00:00+09:00","url":null,"demo":true},
+    {"id":"demo-02","title":"経済ニュースの動きを把握するためのダッシュボード","summary":"経済分野の記事がどのように表示されるかを確認するためのデモです。","category":"経済","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T05:30:00+09:00","url":null,"demo":true},
+    {"id":"demo-03","title":"AI・テクノロジーの話題をひと目でチェック","summary":"テクノロジー分野のレイアウト見本です。実際のニュースではありません。","category":"テクノロジー","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T05:00:00+09:00","url":null,"demo":true},
+    {"id":"demo-04","title":"国内の注目テーマをカテゴリ別にまとめて表示","summary":"国内カテゴリの表示確認用記事です。","category":"国内","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T04:30:00+09:00","url":null,"demo":true},
+    {"id":"demo-05","title":"政策や行政に関する記事を一覧で確認","summary":"政治カテゴリの表示確認用記事です。","category":"政治","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T04:00:00+09:00","url":null,"demo":true},
+    {"id":"demo-06","title":"科学ニュースの発見を分かりやすく整理","summary":"科学カテゴリの表示確認用記事です。","category":"科学","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T03:30:00+09:00","url":null,"demo":true},
+    {"id":"demo-07","title":"スポーツの動向を素早くチェックする","summary":"スポーツカテゴリの表示確認用記事です。","category":"スポーツ","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T03:00:00+09:00","url":null,"demo":true},
+    {"id":"demo-08","title":"映画・音楽などエンタメの新着情報","summary":"エンタメカテゴリの表示確認用記事です。","category":"エンタメ","source":"NEXUS NEWS / デモ","published_at":"2026-10-21T02:30:00+09:00","url":null,"demo":true}
+  ]
+}
