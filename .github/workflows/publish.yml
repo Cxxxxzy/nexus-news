@@ -29,17 +29,19 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Install optional AI SDK
-        if: github.event_name != 'push' && vars.AI_EDITOR_ENABLED == '1'
-        run: python -m pip install 'openai>=2,<4'
       - name: Fetch news on schedule or manual run
         if: github.event_name != 'push'
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          AI_EDITOR_ENABLED: ${{ vars.AI_EDITOR_ENABLED }}
-          AI_MAX_ITEMS: '4'
         run: python scripts/update_news.py
+      # The AI step is optional, uses only the Cloudflare Workers Free model,
+      # and never prevents regular headline updates when its quota runs out.
+      - name: Optional free AI reading guides
+        if: github.event_name != 'push' && vars.FREE_AI_ENABLED == '1'
+        env:
+          FREE_AI_ENABLED: ${{ vars.FREE_AI_ENABLED }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          AI_MAX_ITEMS: '2'
+        run: python scripts/free_ai_editor.py
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Build site
