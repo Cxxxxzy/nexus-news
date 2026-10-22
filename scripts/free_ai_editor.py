@@ -153,10 +153,15 @@ def enrich(articles: list, account_id: str, api_token: str, *,
             print('AI free quota/rate limit reached; stopped AI calls for this run', file=sys.stderr)
             break
         except Exception as exc:
-            # No tokens, request body, article headlines or provider errors dumped.
-                        if isinstance(exc, RuntimeError) and (
+            # Only display known-safe diagnostic statuses, not API responses or secrets.
+            if isinstance(exc, RuntimeError) and (
                 str(exc).startswith('Workers AI HTTP status ')
                 or str(exc) == 'Workers AI returned unsuccessful response'
+            ):
+                print(f'AI guide skipped ({exc})', file=sys.stderr)
+            elif isinstance(exc, ValueError) and str(exc) in (
+                'Cloudflare Account ID must be 32 hexadecimal characters',
+                'Cloudflare API token missing',
             ):
                 print(f'AI guide skipped ({exc})', file=sys.stderr)
             else:
