@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-10-22T20:27:44.653276+00:00",
+  "updated_at": "2026-10-22T21:45:25.398417+00:00",
   "demo": false,
   "articles": [
+    {
+      "id": "188dec6d1c01c35087",
+      "title": "石田知事支援へ政治団体 県内経済会有志ら 「石親会」設立 | 政治・行政 | 福井のニュース",
+      "summary": "福井新聞社によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "政治",
+      "source": "福井新聞社",
+      "published_at": "2026-10-22T21:06:13+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8xUnpZRm9tWVI0QTZlQjZySHlFcHNxMEVXNnhidlNSNHpIUkRzOG1CS0YtSkpMdWo5YnN6RUpHT1NvWS12VExaLVlWcU92YTkydVBna1l2bU5XbFdOSmc?oc=5",
+      "demo": false,
+      "ai_question": "政治団体が県内経済を支援するために「石田知事を支援する会」を設立したのではないか？",
+      "ai_provider": "Cloudflare Workers AI",
+      "ai_label": "見出しから考える確認ポイント（本文未確認）"
+    },
+    {
+      "id": "c83db5448682add6be",
+      "title": "マイクロソフト「中国系ハッカー集団が大規模サイバー攻撃」",
+      "summary": "NHKニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "NHKニュース",
+      "published_at": "2026-10-22T20:47:20+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5MNDgydEFjdFBuU2d5ZXcxU1ZGZWgyMEhHR0FPU0N1ZmoxbVlhZVZuWmVfd2xsOGh3N3p6T3VHWExhdm80dFBUdWVMMVdDQ0p3cTFobm9HR29FMklpTldZ?oc=5",
+      "demo": false,
+      "ai_question": "中国系ハッカー集団がマイクロソフトに大規模なサイバー攻撃を行ったということは本当のようになっているのですか？",
+      "ai_provider": "Cloudflare Workers AI",
+      "ai_label": "見出しから考える確認ポイント（本文未確認）"
+    },
+    {
+      "id": "2084e86ef60d84e5dd",
+      "title": "織田翔希の1位、巨人の指名に賛否「さすがにない」…メジャー希望も強行「密約ありそう」「狂わせないで」",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "スポーツ",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T20:41:27+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEbUZTc0U1Z3o5Q2czN2NMUHF4ME9YeDV6RUxpSTB5VXRDZjZXdF9RMEFwNXFsU3Z4aTVReExza3VUWHgzNXhkUkx1SzFvWGU0Z045ZXItQ0hQSnQ3Tlhwdmo0UnlzUEdiMEVzTlhrblFXVlVBOWtJYkNTOWNjd1E?oc=5",
+      "demo": false
+    },
+    {
+      "id": "bf960ca27756b881f2",
+      "title": "アンソロピック、上場で問われる特殊な「信託」構造 目論見書公開へ",
+      "summary": "日本経済新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "日本経済新聞",
+      "published_at": "2026-10-22T20:33:14+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51SVg1MHJSckNqZGtrdF9QdkRLOXFLaHg5TDU4Tk1fX0VKSFF5T3pZM2I3cEpYWm8xdFZLUlNSTjlnM202a0xCSU1DLUpzaUdSTWxLMDRzNWZTdDgxVHlDMXRyME1SZXFhM2RONg?oc=5",
+      "demo": false
+    },
+    {
+      "id": "b8807ddf0cc88bb22a",
+      "title": "沖縄の先島諸島 暴風大雨厳重警戒 西日本・東日本も大雨おそれ",
+      "summary": "NHKニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国内",
+      "source": "NHKニュース",
+      "published_at": "2026-10-22T20:21:14+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5IR0lUb1cwYS14bS0xcEhXaFMtSGRzbWR0V3pTamJYRnNyRHJUMTVVcTJfN1FXbm01TkFBekVDenBqMGNGUC1UUG51LTF4NVJ0TEhoYVA2QS1KUl9aSG5r?oc=5",
+      "demo": false
+    },
+    {
+      "id": "d7409c65d6aec3a2c7",
+      "title": "米国株式市場＝急反落、ナスダックは6月以来の下落率 ＡＩ投資に懸念",
+      "summary": "Reutersによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "Reuters",
+      "published_at": "2026-10-22T20:11:44+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRXZMbU5DRXVrcU9IS3hrQ1Q1R3dxenk4MnlEZTlScDFXWi0xeTJlNEcwdWlyYTdQejg1X0ljNGhZQXlQUm1fR0xwSHZNX2JqdlFCb3BfWXdjaXp6MnphNjFJb3E5U2pKeE5qNGZtZnRfTVFNenZQMEU0ZTJ3WHlBRmN0UUo3Zw?oc=5",
+      "demo": false
+    },
     {
       "id": "c2515d7665c594501f",
       "title": "高橋洋一・政治経済ホントのところ【企業物価上昇】利上げ理由にならず（北國新聞社）",
@@ -16,13 +82,43 @@
       "ai_label": "見出しから考える確認ポイント（本文未確認）"
     },
     {
-      "id": "188dec6d1c01c35087",
-      "title": "石田知事支援へ政治団体 県内経済会有志ら 「石親会」設立 | 政治・行政 | 福井のニュース",
-      "summary": "福井新聞社によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "id": "8c880102be8a321fb9",
+      "title": "「烏合の衆」「交付金詐欺」…民主改革1％、中道支持層では溝も",
+      "summary": "毎日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
       "category": "政治",
-      "source": "福井新聞社",
+      "source": "毎日新聞",
       "published_at": "2026-10-22T20:00:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8xUnpZRm9tWVI0QTZlQjZySHlFcHNxMEVXNnhidlNSNHpIUkRzOG1CS0YtSkpMdWo5YnN6RUpHT1NvWS12VExaLVlWcU92YTkydVBna1l2bU5XbFdOSmc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94WU5EYXVMSFJqeVlsajJ0TGpvVkNBZTUxX1pUOXB2TTBkMV9HUzhkTXlrUk5pdmNTNUNacTh2ZnEyWW94QU9Qa3Y5aUpXSXJ6TmhsTFJOd0ZtZ09qV3hWNjkxemFzVFZE?oc=5",
+      "demo": false
+    },
+    {
+      "id": "01a67c722e4448dd08",
+      "title": "「ＰＨＰ」脆弱性問題でサイト停止「情報が見られない」…病院予約・防災情報など広範囲で市民生活に影響",
+      "summary": "読売新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "読売新聞",
+      "published_at": "2026-10-22T20:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45eElXSDkzSTIzWGhOUFRINE9xcm1lc2FoUW0zejhwQmE0QjRpelZuSFNITUptYld0TkF0NE9kNF84bnVhclN0ZmVXS2lSaU4zaXFBa19MaTVnVGFqazJMakpvekZKZw?oc=5",
+      "demo": false
+    },
+    {
+      "id": "c2c834cd1f6d365f5a",
+      "title": "体操｜橋本大輝が世界体操４連覇、内村航平以来の史上２人目…個人総合",
+      "summary": "読売新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "スポーツ",
+      "source": "読売新聞",
+      "published_at": "2026-10-22T19:57:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0teVdPMlNJbUVuQXhkYWQ1aVZHZHpzMjJRTmpjcFVHaFo1M1hjY050bnNya3pBMVNnZHpEQ3haU1JWX2JPWWlHcTE5QWhFaVY0dXpQZjFiMks3cUhydTZTVll2NFViTmtl?oc=5",
+      "demo": false
+    },
+    {
+      "id": "cd9e6c34d4b702a2ce",
+      "title": "プーチン氏、ウクライナ東部「歴史的にロシアの土地」 安保確約必要（ロイター）",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国際",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T19:17:32+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBpOHBVYncxNUs0VWdUV2JXUFNibkpUblN4TTVkQWg0UlhCWXdFdkxWVVdhMmhrQzR1YkoxdUtvenNxLVY2ZjJ6ZkVoUVFrR3VRdk4tZDRoSmtSSlVIc3ZjSl9GNXBMamVIcFYwTDlhV0ZxdTcwblVaQ1V2WmJnRnM?oc=5",
       "demo": false
     },
     {
@@ -36,6 +132,16 @@
       "demo": false
     },
     {
+      "id": "4c92f5f59ebf8a60c3",
+      "title": "岡村隆史“公開身長測定”の結果に動揺「写真、消してください！」 ウエストランド井口は余裕の態度",
+      "summary": "ｄメニューニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "エンタメ",
+      "source": "ｄメニューニュース",
+      "published_at": "2026-10-22T17:40:11+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOX05UZkp4WW54SnRVSWlTMWc3YlAyRDRmc2g1Yy00X29LXzBFNVlsZEItQmkyQ0o0NlVvd0pYWXZ6eGRMajhhWlM3YWZzeWt5WGdGYUpQMzBFVWFRaHpEOUZKU25mUW5YQkZja2IxNWtGOE9OZ1hkQXZzZ25rWlJ6V9IBhgFBVV95cUxNTlU2MXkwVnZRT0wyZV9yY3NNVkk5OXJXLWF3SFNhZEpqY0oyNVItZDJJN0lXY2FObnB0RlFNQlNmVGpxLXNzNDFiT0lhTVNDcm4wWmJkMWpuelR5MUlabUlHRE5OMl9adWtFckdyRWVPVU1IWFlOX2ZKc2RMSTRVZVduLWtNQQ?oc=5",
+      "demo": false
+    },
+    {
       "id": "0f132b7dfdbd2d8288",
       "title": "トランプ氏、イランが中間選挙前に原油高画策と主張 「偽攻撃などでっち上げ」（ロイター）",
       "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -45,8 +151,8 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdWhkSDRDUHotYVZrUW5tVUhiMWpsZTBaXzJSZmpvQld3dG1zNk1WWXB2Mmx0SzhCU0ZiQWlyOWRmZFVNd1hWOXVIbXl0dFZHVDBUR1Fkc3NOSHZmSk84N1RLNEVuQzFEczU5TTZ6cy1oRDg4UnBibUU0WXVhbzA?oc=5",
       "demo": false,
       "ai_question": "原油高のイランの行動は中間選挙前に計画されたのではないかとトランプ氏は主張しているのではないか？",
-      "ai_provider": "Cloudflare Workers AI",
-      "ai_label": "見出しから考える確認ポイント（本文未確認）"
+      "ai_label": "見出しから考える確認ポイント（本文未確認）",
+      "ai_provider": "Cloudflare Workers AI"
     },
     {
       "id": "e4893fa70f1241d0a1",
@@ -106,6 +212,26 @@
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T14:54:19+00:00",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1CNDRFWFhLM2xsa1lITzhveGdYb2p1ZHU4LUwxZEVVNDFoazMySENCajJkWmtUc3lyQ29WQ0tTcVJDeHlvV3VVbGhYZnpNVzRa?oc=5",
+      "demo": false
+    },
+    {
+      "id": "4b453fa20c5a878240",
+      "title": "中国西部（チベット自治区）でM7.0の地震 震源近傍では震度6弱程度の強い揺れか",
+      "summary": "ウェザーニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国内",
+      "source": "ウェザーニュース",
+      "published_at": "2026-10-22T14:52:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5fYnpKUEtRbkFkRmQ2Q1I4U2NoRHVIaUpLeVhvX1BaelJlZ29PdHktc1c2U2dPbExDdzByeHlhNWFyNzh5c3JUM2dDbUxYQkduWnhINw?oc=5",
+      "demo": false
+    },
+    {
+      "id": "2a43623021b3215824",
+      "title": "爆発音に噴煙…北朝鮮の“要塞化”進む カメラがとらえた爆発の瞬間 韓国との境界線付近（TBS NEWS DIG Powered by JNN）",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国際",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T14:41:51+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HbTFuWFpUU2RFa0o1RnlUMERPYXcyUHBUUDJhUmY4T2o0b2VGZHY4dENhZzNTalJfMFpJNXZvSzM1bHJ6LUJBeVlvYU9XWWc2RjBhOTFHVUJwWGhFRGZPQ01TU1dDWHg2Rzg0ekV3MmdzVTZxUzZEVlJ0NjZidUU?oc=5",
       "demo": false
     },
     {
@@ -189,6 +315,16 @@
       "demo": false
     },
     {
+      "id": "91f8c6b2afff5c72de",
+      "title": "2026年ドラフト指名選手：ドラゴンズニュース",
+      "summary": "中日ドラゴンズ オフィシャルウェブサイトによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "スポーツ",
+      "source": "中日ドラゴンズ オフィシャルウェブサイト",
+      "published_at": "2026-10-22T13:44:57+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5lUDE0SWs1bWFVQUpJX0dTaWxpc1lYNTNiT01DbEZOTHVHM3ZWZVBhOFk0eEt4b01SU3B4czBkbTlhR1lsMnVabVhsell0VlE?oc=5",
+      "demo": false
+    },
+    {
       "id": "9355a4028708b8a775",
       "title": "ラクス、子会社システムに不正アクセス 契約者情報が流出",
       "summary": "日本経済新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -229,6 +365,16 @@
       "demo": false
     },
     {
+      "id": "3edbc6b19a599d4da0",
+      "title": "ミャンマーの民主化運動指導者スー・チー氏、英国在住の次男と電話…２０２１年のクーデターで拘束後初",
+      "summary": "読売新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国際",
+      "source": "読売新聞",
+      "published_at": "2026-10-22T12:34:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQWnVIMUg2Q2cwbzl3YlhpX2pBcXN6WDhubjlEYlJxT2w4a2V1MEcxcWdIbXh3VmJIc2JPTjRweWNlUzRXOVF1b3ZDNlFnVjZUaW0yaFFLR05FMm5UN1dEZS13?oc=5",
+      "demo": false
+    },
+    {
       "id": "0f838767dc905f3cc7",
       "title": "ドラフト 巨人・榑松スカウトディレクター、織田翔希への指名あいさつは「受け入れられれば」（サンケイスポーツ）",
       "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -256,6 +402,16 @@
       "source": "www.tv-tokyo.co.jp",
       "published_at": "2026-10-22T12:26:19+00:00",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03bXNMQWgydGZuNm5WdnRmZVZTa2lDdmxTZTNTWVVfX3JtWXU5UGxSeHFGY0RlY19RTk1XTlNjZmZ5Z0x3TGlqZHU5MzZvcWlOT0Nrdm5icnFOemx3SVdWaGhGOF9YZkJuNU9oZXdIQTg?oc=5",
+      "demo": false
+    },
+    {
+      "id": "a0557e06d65372094f",
+      "title": "LOST10＞“小児科医”井口理が「いぬのおまわりさん」を口ずさむ 母を案じる少女に寄り添う姿に「ずっとドラマの癒やし枠でいて」の声（ネタバレあり）（MANTANWEB）",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "エンタメ",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T12:21:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsQ2tLakJwUi1HX1hicWNtYTlCRDM0U1NtZnpLd1BlSUdnUUhUTGtXMUdYanJNM1M5X2NqWkYzd0g1LVp3Skg5dW93U1BweG1XTVFCSlpXUXYzTUszUjFuTEVYRXdYaktCM1p6QVF0emRVbFg0OE9KT2x3NF9qSDQ?oc=5",
       "demo": false
     },
     {
@@ -379,6 +535,26 @@
       "demo": false
     },
     {
+      "id": "ba6cf0baafd73bea9f",
+      "title": "ミュージックステーション40周年SP、10月23日の出演者・歌唱曲一覧 GLAYが2曲披露、Aぇ! groupらも登場",
+      "summary": "福井新聞社によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "エンタメ",
+      "source": "福井新聞社",
+      "published_at": "2026-10-22T11:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nRUJXdm1FUkJCTmhFNXd0dVhkaXJSMlhxREx3U0lYNDMxYWs4bmFJcFE5OTdKWWdlWi1scFlCVjlwT1dMOFpiVUJ5YkJKUDIycDY1LUJsN2hvRm9KUkE?oc=5",
+      "demo": false
+    },
+    {
+      "id": "068e0fb968e24d9c9f",
+      "title": "【全日本】はなわの長男・塙元輝が鈴木秀樹相手に大みそかデビュー「すごくワクワクします」",
+      "summary": "東スポWEBによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "エンタメ",
+      "source": "東スポWEB",
+      "published_at": "2026-10-22T10:49:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HSUZXTkVSRnFLT25RUVYwN0ZBbTM1RlEyT0hiUjFxTkhHQW1MdE1aX1Z6WWt5Mi1zN1V0dHRmLWpNRE14VFhEQTBiVDBfM2JsazdkbnFrRVNJRVJQ?oc=5",
+      "demo": false
+    },
+    {
       "id": "db9be6b0f5447812b8",
       "title": "『サイバーパンク2077』「エッジランナーズ2」アップデート2.5配信開始！タリアやウィークも登場のローンチトレイラー公開",
       "summary": "Game*Sparkによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -439,6 +615,16 @@
       "demo": false
     },
     {
+      "id": "874b3911e7e9b59d70",
+      "title": "【カプコン】不正アクセスにより“CAPCOM ID”のメールアドレス約1177万件が漏えい。緊急対策は完了しサービスは引き続き利用可能。クレカ情報の漏えいはなし",
+      "summary": "ファミ通によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "ファミ通",
+      "published_at": "2026-10-22T09:54:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uTEJWZ1gxRnV4RjBPWGhiVkw3R2tqRzkwLW1XaldVZHREMXc3aktVMERVdlY5Yjd6YmZlTFdUY0VXa0g2WHdxQThETHA1MFlxdGd4Uk94SQ?oc=5",
+      "demo": false
+    },
+    {
       "id": "4a71762301233beff6",
       "title": "ドル円 156.77円まで下値を広げる、円全面高の流れが継続｜FX・為替ニュース",
       "summary": "ザイFX！によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -486,6 +672,16 @@
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T09:00:03+00:00",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVFZ2b1JBeUk4TWE0SGdNaXRjLW1RUjMzMk56U0ptcHhob19mUVRjWWM4ZjRvaENVY0ozSlMwRVJXWE1OeVNKWWxFakpLOWpSVmxhN0VzaVM3UEdMeU10MmgtRTJVOU9Ua3ZlbWoyNGJvdVYyWjNDSWFQNVAyQzdIZG9rdGNZd2Rl?oc=5",
+      "demo": false
+    },
+    {
+      "id": "3a90582c068733ce0f",
+      "title": "芦田愛菜主演『南田南弁護士は天才肌』はなぜ好評？本家パク・ウンビンとの演技の違いと“日本版ならでは”の魅力（女性自身）",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "エンタメ",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T08:40:54+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hT1dVMlJRVXo5Q1oyOE9TVU5FN0tXQzNmTjNzc044Y3c3aDh2UXFnc0xQQ0Q2b1cwZHdLWloxazJWa3ZvejEtdVZoN05nMWlxWkhQYzFpbWNiTERnVHBDajNMUS1MUXk3bnFpVlV1a3kybDlBNXRTemJaWVk0UEU?oc=5",
       "demo": false
     },
     {
@@ -579,6 +775,16 @@
       "demo": false
     },
     {
+      "id": "58f26cdc36be4d98e4",
+      "title": "菊花賞（GⅠ） 出走馬の「調教後の馬体重」",
+      "summary": "JRA日本中央競馬会によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "スポーツ",
+      "source": "JRA日本中央競馬会",
+      "published_at": "2026-10-22T08:07:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SSUNlMnVfaG1IYmpXaHl6bWFKZnItYmx0SGFDS2k1M1RZV0RTZEdYOXBRdHZ0VElMVWdWUUhPQVZXYVJ6WUlDMEs0ejQ5dmllMi1CUDZhUUQ?oc=5",
+      "demo": false
+    },
+    {
       "id": "bffe07bbe8308eb187",
       "title": "カプコン、1177万件の情報漏えいを発表 全世界のメールアドレスなど 謝罪「『CAPCOM ID』を使用したサービスは引き続きご利用いただけます」（オリコン）",
       "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -586,6 +792,16 @@
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T08:07:37+00:00",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14ZFRLdHMxNUNlYWx4OXA2eWpoNXBuWElwam1uZlhIa2VJdVpiMWVHcjREamZNa3p1b1gzRW1LUHlUNkIxSzJyZ0Y3a0F2T2NRNzZpaWoydmNLUWR0WW9JdXdLclZOQzBkR25fRmpRbG5FaVVxd1QycEtWVm1sczQ?oc=5",
+      "demo": false
+    },
+    {
+      "id": "a468fa4448eaf69c97",
+      "title": "24日、25日の山の天気 秋雨前線が停滞して曇りや雨の所が多い(気象予報士 宮田 雄一朗 2026年10月22日)",
+      "summary": "tenki.jpによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国内",
+      "source": "tenki.jp",
+      "published_at": "2026-10-22T08:04:58+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43OG51M08zem1xR3UybEFTSEt6ODVud2htbTlid21wSWtJeWNIQkxHeUxaMXlUNkVVckZQXzR5TV9tY3FhQmhiek5aOVZ0T3ZuNE1hVFN1VHk1ckZHZWo4YllaSUdrNnMwN2c?oc=5",
       "demo": false
     },
     {
@@ -689,13 +905,13 @@
       "demo": false
     },
     {
-      "id": "e3bc874de2552a6138",
+      "id": "5e5de9b275afa3f606",
       "title": "渡辺翔太、初の恋リアMCで“オトナの恋”に衝撃「ムズい。よくわからん」 Snow Manメンバーからは心配される",
       "summary": "オリコンニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
       "category": "エンタメ",
       "source": "オリコンニュース",
       "published_at": "2026-10-22T05:05:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sRDVmYnZReEdzcTk5QVMzak5XYUR0bjRIODV0cFV3QUh1dFpRSGlNczU0azJ4emdHY29FWlNCVVdCX19JemRTTzREUW9PaUU?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnRURPZ3BLYlRjM2xwMUJsOERGSW94ekFPUURaRWRFYS02NnAtRWpSLWtDcl80Z1VPdkcwNzFWZ3FnbDNPck55d01NSWwzcV9yLW9mb3dR?oc=5",
       "demo": false
     },
     {
@@ -716,6 +932,16 @@
       "source": "読売新聞",
       "published_at": "2026-10-22T04:30:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE12bnhxY0tBVWgyeFJVMFoxY0JDemdNb2h0d0FkREZZSHJyQ3lPS0MydlFDd2pCaHBhdjVuLUR4NDJxNkNDaUpFUkJYVlFqOXZxeEFjYTA3a3VRSkZkZnV6UHNB?oc=5",
+      "demo": false
+    },
+    {
+      "id": "19a4f8b64eb95309a2",
+      "title": "FCCLが「FMV Keyboard X」の一般販売を開始 ハイスペックマウス「FMV Mouse X」も同時発売 - ITmedia PC USER",
+      "summary": "ITmediaによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "テクノロジー",
+      "source": "ITmedia",
+      "published_at": "2026-10-22T04:30:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xQkI5VXBNQTJxWXl6TmN5akRyamNSdUhWc2lydEp0SW9YY2RrODFTN2tyUkp3VlY5OWM1MGVxeDhPTWFGcnB1QUg2OGU3WlVZRGt4aHppSjg1RTczVENXMGxmWHV5cUdHTHZ3R0Y2MNIBaEFVX3lxTE9pWW9BRjVKUW0ya3h6amtvNUxDY0hHVTZaNmYwWjFtT1I0RUxkN3pXeTA0X3JldFYtWFFjd2JFbDlkSExwWVlGZldVR0RIVm9pbnpIX2lKS1R2RnVnRmNGSXJqMmppNGsz?oc=5",
       "demo": false
     },
     {
@@ -789,6 +1015,16 @@
       "demo": false
     },
     {
+      "id": "99b8f7380f48e4e702",
+      "title": "かつては「利益率40％超」を誇ったが… ファナックで「フィジカルAI」より先に起きていた”米中ロボット事業”の大変化",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "テクノロジー",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T02:30:37+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FT3FBVjZNZlJlZzUxYUxocEFJVWptVVZOUU1hUTNUSTlMYWNpZ2xmTThCc3NsWjRTVjUtRTVYSS1kNjZDQ0dlMmFOMkVFcDNJWV9SdVBFX21RLUJRXzFjTmFMcjlQeGh6bEw2MmI4U3dhOS1fR3NjamY4OG5NZ28?oc=5",
+      "demo": false
+    },
+    {
       "id": "b7ff029a6da9796d6f",
       "title": "秋篠宮ご夫妻、青森県入り｜速報｜Web東奥",
       "summary": "東奥日報社によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -826,6 +1062,16 @@
       "source": "日本経済新聞",
       "published_at": "2026-10-22T02:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85bTVjU2I1azJnX3ctSmdTR2o5dFFRT2dKTnk5TkVzczloYk9GZmczelZUdEVmdS1GRW5fREpBRy0xNWVDM09neXZzbk5PejRfSk5TdGRmQkJrTGV4SG0xZkppT3pvOEFSV05uZw?oc=5",
+      "demo": false
+    },
+    {
+      "id": "8bfcf444d178045f9f",
+      "title": "神奈川県警、期限切れ免許証不正持ちだし 過激派・右翼の顔写真収集か 30年前から",
+      "summary": "産経ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国内",
+      "source": "産経ニュース",
+      "published_at": "2026-10-22T01:41:22+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE83YWp1QzhlTHFwWnI1LWdZWFI5UTRCemIwY1MtRUtOZFF0blBoZTFYOHdQT1hRQ0dFaVdGNGw5UGxqZjlTdFZtZnJpSFYzY05fRl9UUFYtS2hFbmxwQ2RDX1c0TmhqZE9YMUtKYl9qRFpEeFpjLVE?oc=5",
       "demo": false
     },
     {
@@ -922,10 +1168,30 @@
       "id": "28d577bcff7f983466",
       "title": "オープンAIの数学論文「大量公開」で、若手の研究が丸ごと吹き飛んだ…ニューヨーク大教授が明かした懸念の理由（海外）",
       "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "テクノロジー",
+      "category": "科学",
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-21T22:10:02+00:00",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15Rm9xandmSHJJR3N5eVp5aExCSlAtQzRsekJfZTJyMkRqcm5DUkRhZDBudUtOYlVwS1hzWnE1TW1aVkJwUlQ4YU94T005Y0NXOXJSZGpfZE5NdFZEdXFXOWxHMXhTTHRWbUtrX19jVXNQV28wbWRYVkJ1ZmFyLXc?oc=5",
+      "demo": false
+    },
+    {
+      "id": "90421a1ba981e2ae63",
+      "title": "台湾統一地方選挙で予想外の展開に…台北市長選で優勢だった国民党現職が失速し､民進党の挑戦者が急上昇のサプライズ",
+      "summary": "東洋経済オンラインによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国際",
+      "source": "東洋経済オンライン",
+      "published_at": "2026-10-21T21:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wb2t1eHphREVkR05UbnNEZk0wcWU3QVdTNWZLaE03aWdjSWt6YVBxblNqdXBmb2NjME40VmMzWUpyVDJRMVB6UFc1ajdERGVlS1dPeWhsYmszSVU?oc=5",
+      "demo": false
+    },
+    {
+      "id": "1f0b2cb5061bbc810c",
+      "title": "（寄稿）新しい政治の季節へ 日本総合研究所会長・多摩大学学長、寺島実郎",
+      "summary": "朝日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "政治",
+      "source": "朝日新聞",
+      "published_at": "2026-10-21T20:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BUzk0N0RfMDFxZHhFNEhjVFVfaDRwU1JZLUg2blJzdmxKVzVNdHVIdTBoRXkxRHF3a245RW44MTBFU2wzU0RaMjNuenNYWDVMWlU1QnFadElCQ0t1?oc=5",
       "demo": false
     },
     {
@@ -946,266 +1212,6 @@
       "source": "毎日新聞",
       "published_at": "2026-10-21T20:00:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rbHNnSjJCRnJ0Ym82VzR1QlctdkFtY1YtNjVGLVF1QVdRWDFaRjNqR09rbjc1OFZCa19yZG41dV80LXE5N3dUVzczblNSUTU0Y09GbDlJT0p4WFYzd3VRQnNRd3J5RmRi?oc=5",
-      "demo": false
-    },
-    {
-      "id": "107828bde2f85cc187",
-      "title": "社説：繰り返す「政治とカネ」 首相は放置するつもりか",
-      "summary": "毎日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "毎日新聞",
-      "published_at": "2026-10-21T17:01:04+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MZEt5Zm9WaTUzRXJJZVYtQ3JqWHdydXljVEtvYUc2QVNTQ0xGWmZXckxKRU1LY00xb2JxZVczZlk3WVVpeEJ1S1p6REZLSGI3bDVtTXQwTEw1RF9qVzE5UHhrSmZhOVhJ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "c2194dc0b8320ac3a8",
-      "title": "ひろゆき氏と泉氏の政治団体、来春の統一地方選に向け候補者公募",
-      "summary": "ｄメニューニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "ｄメニューニュース",
-      "published_at": "2026-10-21T13:33:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeVNJbEtqU1Q3WDF0ZXdILUJBT2lpZk9iLWdVdC02cjlfWXFENGN0akJ4MlgweFBXOU5BeVI2TUdYR0lUdHY2WEZyM2hUazRIN3R5SmdJVUdkUExhYy1oTU44YnF1RjBPcWJSVTJOTHA0VzFkUDN2bDJtdlRwdU9LTUFnNU13bjI3OFhoRC15MG9WWlhxVWl6UV82LTFkOEg3bGpKNm1saUZmejgyZHhtcG82cFlELWNHUk9wc2t3NXo5b0U4b2pZ0gF3QVVfeXFMTjZyZFJFclpzRkNSWEJMREdPX3F5S21HWU84b3E5cDR2Yml4N2w3azhLeHZ6LXdSWFlLUHR2aV9ZOUtNY2pQanlqcFM0dzBJaGIxQ0FucUNXd1U4Ylo4cWlKQ0FYa29meHlTc2NFeW44Z191UkZRUnc?oc=5",
-      "demo": false
-    },
-    {
-      "id": "bc8d4f980fe6cd4712",
-      "title": "なぜ「好きな人」に一気に冷めるのか？繰り返さないための意外な気づき",
-      "summary": "ライブドアニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "科学",
-      "source": "ライブドアニュース",
-      "published_at": "2026-10-21T13:16:06+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1hazV0b2lxVlJjSW5sbE44c0E0OFBWRms1R3pWaVN0dWJ1ZU5lZXZqcU5wVVVxcFNWcjVVZVBRal95aWpmZnVIMl9jUi10Y3ZQSDNwVURsSVRtSFgwaHRn?oc=5",
-      "demo": false
-    },
-    {
-      "id": "1a3af84765c775056e",
-      "title": "元日本代表が圧巻ハットトリック！ 町田が5発大勝で首位浮上、清水を寄せ付けず（スポーティングニュース日本版）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T13:13:57+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4MHFlNzJ1U2tZekpLSVJuSkZkLWlXNHNFUGZYdHFVX0otQVpWTjl6M3VzYkRNQ1BKX2YtOV9SSTVTMUZZSG5Rc0hnbHpwTGdtRWpObkpWc3VnWmdPVFpkVGhELXk3UFNXU1JfbkRzczhlMEVHbWdpeVBMenFjbEk?oc=5",
-      "demo": false
-    },
-    {
-      "id": "7ee51f64e913297193",
-      "title": "仏暴動の偽画像を海外政治家が拡散 マクロン大統領「生成AI作成で事実無根」と非難（テレビ朝日系（ANN））",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T13:03:59+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1obXZrYlhFalpDck1xYjAwZFVLdnZpYUoyU2t6MTJ6UVludVF1SGRpVWUtNjZGRUZqYTVXck1Hci1tdEZHQy1KbURRUlNwamxZRTJ6V1B4NGs0dG84VkM4blozM0F4OXROb3lRX0tnT2NWWWtWQVBVTFV4Mzk4Q28?oc=5",
-      "demo": false
-    },
-    {
-      "id": "57573e8d34e5f042ff",
-      "title": "東野幸治、泉房穂氏とひろゆき氏の政治団体の候補者公募に「選挙に行く人が増えてくれたら」（日刊スポーツ）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T12:30:50+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZLVVjZzMwV1c4VEMwNUd0NlpqcHg5MDNkaDFWM3QwLVQtaW05bkRVVFhiNlgyLVFHS2R1d053bmtyc0t1dDB6NnZ5dlcySVVRaGRvUXZjcE1JYnpheXNVMDJ6d0kwUU1WZWNObmMxa0VyNlFuY3dnakdqSkpLYkE?oc=5",
-      "demo": false
-    },
-    {
-      "id": "1e4f04a4edd194a112",
-      "title": "橋下徹氏、泉房穂氏とひろゆき氏の政治団体の戦略に「僕は大賛成」も出馬は…",
-      "summary": "日刊スポーツによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "日刊スポーツ",
-      "published_at": "2026-10-21T12:28:56+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxODJOajBHd01adUFleG9iZnlYUXUzTnNkV2NmWU5zU1JGeGo5X25rTW9iQ1hzT0d1dTVob3NsRXkza3NFcTJFRGxIM2hHbjR5OUJGTmh6aXp1UkI3ZUtvenFVREcxTGpoNXZaT0x3U3ZzRk16alYw0gF_QVVfeXFMTlYybkRSWVFYRnM0MHVhUWNONFVVeWRKRk1KVFRFaEY4VWJXSE84SllSVXBJTTRwYkxTbzR0UTRjRlItTUt4UTFHUVgzazRqdFN4aTVzRXVnbzZCdFVIVW9qUkhzbldkTTJaWDdtQkhLTlFSVFZISVo0UzNpbDNIZw?oc=5",
-      "demo": false
-    },
-    {
-      "id": "ef0e4c1857c4c56444",
-      "title": "EV購入補助、来年から減ります 最大125万円が75万円に",
-      "summary": "NEWSjpによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "経済",
-      "source": "NEWSjp",
-      "published_at": "2026-10-21T12:14:55+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aUUp4UDV4N1FwQ3VwYmc1dF9yUHVSNU9nMkdMMHFjWTF5eUpBYXo5TEZkWm1zd2NIaTNQbl83cHVvLTEyb0xIRnVwaV9vZw?oc=5",
-      "demo": false
-    },
-    {
-      "id": "69a1d5978b4421159a",
-      "title": "プログラム言語「PHP」重大弱点 さくらネット、対応で機能一部停止",
-      "summary": "日本経済新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "経済",
-      "source": "日本経済新聞",
-      "published_at": "2026-10-21T12:10:48+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE85MkZIRUtCMURSQVNNOUVPQ2duVEdYVU5xd2N1eUUtLTMzZ2owZTZSNk0xUWh6eXV4endFV2dwOFdhdmJSb2NxWnJvOU9QZE9ld1pSOXJtZ2Q2MUp1S1FDclJqTXd6cUZ2cGN1ag?oc=5",
-      "demo": false
-    },
-    {
-      "id": "2be4f9efd89a84c817",
-      "title": "不出馬表明の平井知事、涙ぐみ「幸せだったと思う」…思い込め自作の歌披露「ゆうべ手元でこねくり回してみた」",
-      "summary": "読売新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "読売新聞",
-      "published_at": "2026-10-21T12:01:07+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12YmhrSjF0RGNnWHZwd0t5RDFJTXZBZHZUSXktUnRlSlJEeFVLRVprTlM4SmpacmYycXhZaVZMbDNpa3dEMldEbjJiUGNydzFhRkF6RmVtU1FFSjlhWUNRRmJYbWRYdw?oc=5",
-      "demo": false
-    },
-    {
-      "id": "9369df20454976fa3c",
-      "title": "高市政権1年、支持率63％“オバケ数字”維持の背景、「トップダウン政治」の成功と“一強”の弊害に最側近が抱く危機感【Nスタ解説】（TBS NEWS DIG Powered by JNN）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T11:52:13+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Kd0hEYmlGWDhEelB6UTk2WExFYzN6ZnVQVHRjekczY3BDVWJTbWJZd3F4QnB6ZGtMMFhuVHJwYUx6M1R6Q1ozR0drd0pmazBXWFl1VTN4N052SkNWVkQzRWFLV3MwWFhHQ2Z1c2hodk16czVNaUpLeUhnTHZoSFU?oc=5",
-      "demo": false
-    },
-    {
-      "id": "96e42bc79d722546e9",
-      "title": "「ひろゆき＆いずみ新党」、宮崎県知事選挙で東国原英夫氏支援…文京区長選挙では前区議",
-      "summary": "読売新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "読売新聞",
-      "published_at": "2026-10-21T11:52:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE16ZjZ0SXNNZi1uckthWXFIUVA0MmhSM0lPMjRHaXB4R29wZkRyVnJkRi1Ubk4tWnFXX2FrQjd3VjI1OUNEUmVLcnc5Zm9LUHVMSHY2aUZ2cUNQMzdTZjV6SHpEempobUF6eVpYcGR3?oc=5",
-      "demo": false
-    },
-    {
-      "id": "d38705a09eea909971",
-      "title": "【台風情報】大型で猛烈な台風30号(チャンパー)の進路予想 22日午前6時には沖縄の南に達する見込み 週末は秋雨前線の活動が活発化する恐れ 24日(土)は九州の広い範囲で「警報級の大雨」となる可能性",
-      "summary": "FNNプライムオンラインによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "FNNプライムオンライン",
-      "published_at": "2026-10-21T11:28:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1MeElhc1FvbDV4dnZyUTJ2X2FMUkdyejB1SzUxOHluRjRaVEdjUXQ4a3NmZnpyMDJldlJNX0tIVGxZM1VtUXBGVHA1RDE5dw?oc=5",
-      "demo": false
-    },
-    {
-      "id": "9249293674b2c528c8",
-      "title": "Ｓａｒｅｅｅ、タイガー・ジェット・シンに「サーベル殴打」されたファンへメッセージ「プロレス嫌いにならないでね」…「主宰大会」チケットもプレゼント（スポーツ報知）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T11:11:41+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1jbGp2TkpXYmpuZW9IaUFZWThlbFdaMHQ1ZG5VLXoyS3lHQkxRNDQ0N205cG1nUHdvZl9sOTF5cG1DR3NCRVlXbDBUOGQzLU9tbVhHdU9LdUJmMU5CYno2cF9RcXUxekw3ZTJWWkstbk0xTFZmRURqSFVEeC1iSTA?oc=5",
-      "demo": false
-    },
-    {
-      "id": "db414a52c6542190b3",
-      "title": "U16大会エントリーミス 保護者が日本陸連に再発防止を要請 選手の手紙に有森会長が涙",
-      "summary": "産経ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "産経ニュース",
-      "published_at": "2026-10-21T11:07:50+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZF91YUNvSklmVHBLbnhGZlNCRFJfMTY4NWNDbHpWNFRDYUQwY1d2amUtd2hWdVF5bmU1dVZwTi1GQjc2VUkzNlIzenNFdHJIWnZveG4tOUZFdTlQcTRsVUdHWno5TE1pOEJXOU5zQ0xzR3R0WTZaWkh0YlE2YTZKQkdyQ3VkMjlaUjRvYQ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "f5f40c8dd38b452e87",
-      "title": "川島明、長浜広奈への「パパ活イジり」が波紋 理解を示す声も (2026年10月21日掲載)",
-      "summary": "ライブドアニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "エンタメ",
-      "source": "ライブドアニュース",
-      "published_at": "2026-10-21T10:52:44+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LdVVVQ1lGVEhxQk83RUdPdUhiLVc2N01TMm9VdEhheFNTLWJ3X2ZwU1RoNGU5ZHlOX0VONFdReXV5T0NHQkdxd1IwZFctRlh4ejZRczYwU0VvR2hld1E?oc=5",
-      "demo": false
-    },
-    {
-      "id": "7be0b7fdc2969c2170",
-      "title": "【速報】秋田県由利本荘市 子吉川にレベル5氾濫特別警報 命を守る行動を",
-      "summary": "ウェザーニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "ウェザーニュース",
-      "published_at": "2026-10-21T10:48:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4zZlFxOXFGbjI3alc0UHVpU3RRZEF6aVZMZ1FwNFNOSjZXcTY2clRoZWQ3WVE1aERqcExXczFKUjc0cWdYTDY5SjRYd3BRM1JsX1J4dA?oc=5",
-      "demo": false
-    },
-    {
-      "id": "4c848e5dc89f09eef3",
-      "title": "日銀が物価上昇率2％到達判断へ、デフレ対応から転換 政策金利は据え置きか、10月会合（産経新聞）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "経済",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T10:47:35+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ia1hJNW9PcWx0cFFocG42UjdvYW1NWDBOc2FvZ29jMDhWdDQ3NWdhaEJKSjJIekwxeHFZZFdCbGwxNG9HWmZDWlk2LWZxNHNvQU5idngzMF9lUkJURU1QVDFGUUlsaEFpZjV0MHNaOGJJYklxOHlrTmozeGxwUk0?oc=5",
-      "demo": false
-    },
-    {
-      "id": "232ff7add70aba5172",
-      "title": "高市政権1年、支持率63％“オバケ数字”維持の背景、「トップダウン政治」の成功と“一強”の弊害に最側近が抱く危機感【Nスタ解説】",
-      "summary": "ｄメニューニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "ｄメニューニュース",
-      "published_at": "2026-10-21T10:45:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5seTlwaVFTYzFqYXlULWd4ZlM2d0MxSlhjMkVRMGJMcmpoc1lmY0hySGNocE9KOFp5YmFNbmJETWdHZ0RuR0xTbG02RnB3Q0NKX0J2aHo5RFlyQks0a2dudW50RDhUd0JBYUlESTAtTVpvZ9IBd0FVX3lxTE1MaUpzZ0s0dDlZWU9PZW41a19rdWwwUkRSUkh3QWlGclJYOTdrYWxNeFoyaXZXdDdBdjNmbzI0bnVDeDZDVTRNWFo4ZU82aUdWbmEwU2JadU9iZVlLVUdFY3hlM1NpcHB2WndVM3NWTmpXUFpjeGl3?oc=5",
-      "demo": false
-    },
-    {
-      "id": "dfabcf9767997670ba",
-      "title": "公民中「減税より給付」 物価高対策で即効性重視",
-      "summary": "ｄメニューニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "経済",
-      "source": "ｄメニューニュース",
-      "published_at": "2026-10-21T10:42:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdkxGRHhzS3BwQnEwVkVMRzZGVF90cG43RVhVZXhQTWFrMlhNOEhadFpKelAtRHVXcl9SalBVbVBlcnVfc18wQTVudU9GWEpnTFJ1cllwbE1lWDM0eUozcEZUWmRwQWVqNXdkMUl3MEIxbEJLU01ubnpMbjBjMFI1MUJTU18zRGczYVZnLWdn0gGTAUFVX3lxTFBDRjd2c2VDZmd1WVZsWVZxZGo4YlZOdHF3N0drcUptTl9PYzF0S1ZPR2xpZEpEUVZ1MnY3V2NiejliY0pYYWdHR1N1Uk11d3NGSURGejJmbkVld0tzYjc1d3YwaFBIUGpydjUzQVlkTjg0SEJmQVZWT3ZjdlFrajhMekpYeWVWZ19HQVZXSDRmSEFKUQ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "e81b931c10b13b39d5",
-      "title": "超音波でがん細胞破壊 メスや針を使わない治療法 大阪公立大が日本初の特定臨床研究開始（産経新聞）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "科学",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T10:36:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAzQk9LMEZVY01xRDF6amNtMkRzbWQ1bHY2bWY4Z2RfekVEcWJSUGxVdUhTMXhUTldHaGF0UWxPTjVadWhFVy1qTlhZY3BwZnVNRk1FRkNCQmFFM184VEw3TVdzN195SGlZMUgyWFFXdFlNWlk4ejcyLUxFd1VtZTQ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "c40ba012298003be89",
-      "title": "天王星と海王星は“双子”と言えるほど似てないかも？ 海王星が大移動した可能性を改めて示唆（sorae 宇宙へのポータルサイト）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "科学",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T10:30:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JckhieGhNU3VBQ1RLMW5YRjVPWEROMmg4a0ctYWVoLVpleVZvWG9fMVhXYnFxc0hpQXdjQzJVUDRUbG5nUy1KRlhadE9HRlc2R015QkVreFNhNWFBV3J4aUMzRGVORmJna053Tzd1dmN6aUhCanhIMGRrS09zeWs?oc=5",
-      "demo": false
-    },
-    {
-      "id": "031da942cff2ea4a66",
-      "title": "泉房穂氏・ひろゆき氏の政治団体 統一地方選で候補者を公募へ",
-      "summary": "NHKニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "NHKニュース",
-      "published_at": "2026-10-21T10:28:24+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01SGwwRkdST3lfUGxBakJrcGhTeXlFYUo5UnVHY3VGRG85VWQ2dHpaRmhoNlNmdUljaDhXYnVObnFydWFlUENJdnhBYlVrd05VeVBRSTRGcm0yanRTcWtJ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "782eb9c657be933203",
-      "title": "米中間選挙、「青い波」に身構える市場 AI・防衛関連銘柄に逆風も",
-      "summary": "日本経済新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国際",
-      "source": "日本経済新聞",
-      "published_at": "2026-10-21T10:21:05+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTT1dOc2l4dFhueEt4aUJvb3N0ZFo2bDQwSHhHVjdMakNiMkFYeFV5ZnFKekUtX1ZvaDZDQ2pkY0ttVng0SnJDaFdyRUF1VFU1VFhQNkJ5aWxlV0xNNW5nQU8zall6eFBZb1lTMA?oc=5",
-      "demo": false
-    },
-    {
-      "id": "2fc0366cd160cb4acd",
-      "title": "『Voice of Cards』3部作セットが50％オフの2970円に。単品購入でも72%オフの985円。スクエニのハロウィンセールが11月4日まで開催",
-      "summary": "ファミ通によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "エンタメ",
-      "source": "ファミ通",
-      "published_at": "2026-10-21T10:20:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5VNEdqNUtwb1NRX2xPbWw2YVh0UHc0dW1wWWozSEUxS2tLQnl4UTMzaUxxUzhiWnpXeHNwbWFzME5FX3QzZ3Rpem91T3dhcF81dFZKSmx3VQ?oc=5",
-      "demo": false
-    },
-    {
-      "id": "37975ee7eb464be84a",
-      "title": "武部農相側に献金禁止企業から30万円か、衆院選公示日 陳謝し返金 [政治資金問題]",
-      "summary": "朝日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "政治",
-      "source": "朝日新聞",
-      "published_at": "2026-10-21T10:16:18+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1CTWkyVGlpR1V1Q2pIdTJCUnN6WlJCVlE0aDdlZ0dicXhZVkt1cGJDVFVnZVQtbjhrWnVQY05fdjRONG9xeTJoWGVfaXZYQV9xdXI0dU9PUEc4dEEyOGplMjRBOE4zY2M?oc=5",
       "demo": false
     }
   ]
