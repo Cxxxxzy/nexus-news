@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T20:20:27.091754+00:00",
+  "updated_at": "2026-10-22T20:27:44.653276+00:00",
   "demo": false,
   "articles": [
     {
@@ -10,7 +10,10 @@
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T20:05:37+00:00",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBsd3NCS0hmT0t4SEJlWlFhVGE1czZQWU1qcDZJNHpfYkNGWktaU1lTVjB4R3JEQm1sQ0M0NS0zREM5Wjl1dG9Xb0JYVElwQXF2U04taGZjY3Q5eXljN0xDcEk1ZGRaWTRGNGd3bU5PSkZtc0hfNmFDaEh0a2VPT2M?oc=5",
-      "demo": false
+      "demo": false,
+      "ai_question": "企業物価上昇の理由がなぜ利上げにならないのか？？",
+      "ai_provider": "Cloudflare Workers AI",
+      "ai_label": "見出しから考える確認ポイント（本文未確認）"
     },
     {
       "id": "188dec6d1c01c35087",
@@ -40,7 +43,10 @@
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T16:30:39+00:00",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdWhkSDRDUHotYVZrUW5tVUhiMWpsZTBaXzJSZmpvQld3dG1zNk1WWXB2Mmx0SzhCU0ZiQWlyOWRmZFVNd1hWOXVIbXl0dFZHVDBUR1Fkc3NOSHZmSk84N1RLNEVuQzFEczU5TTZ6cy1oRDg4UnBibUU0WXVhbzA?oc=5",
-      "demo": false
+      "demo": false,
+      "ai_question": "原油高のイランの行動は中間選挙前に計画されたのではないかとトランプ氏は主張しているのではないか？",
+      "ai_provider": "Cloudflare Workers AI",
+      "ai_label": "見出しから考える確認ポイント（本文未確認）"
     },
     {
       "id": "e4893fa70f1241d0a1",
@@ -126,7 +132,7 @@
       "id": "7904608cf45a183cc9",
       "title": "初の核最終処分場の操業決定 北欧",
       "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "テクノロジー",
+      "category": "経済",
       "source": "Yahoo!ニュース",
       "published_at": "2026-10-22T14:28:24+00:00",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NWmJzWXowRFNlVzBUWUVOSlRpa0N3WmlyaGt3X0RmYVhQTFZZaHUtV0lYUjBJTDBNVHZZMlZwTEhCLWRsZGFidFNhLVBJak55?oc=5",
@@ -273,6 +279,16 @@
       "demo": false
     },
     {
+      "id": "d61e762acaa6fc46d3",
+      "title": "スーチー氏、次男と会話（時事通信）",
+      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "国際",
+      "source": "Yahoo!ニュース",
+      "published_at": "2026-10-22T12:09:45+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5aTm1iU3Iwd0hlRGQ3Y2hzSG9SWTdqU2p1LW43amViS0kwcF9PSk53c2pvOUhVOGtfTlFsUUtoQ3l6LTk4bGhQZ2NfdGp1RUpqUDlfeVlSVjZNT1J6bkxkWlFzYlUtRHpPbzRheFYtUE56dTJNLUxLUGRtYTEtWkE?oc=5",
+      "demo": false
+    },
+    {
       "id": "625c7ecc77049bd965",
       "title": "【一問一答】日本ハムドラフト２位の牟禮翔 周囲に感謝「恩返しという形で活躍」",
       "summary": "道新スポーツによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -383,6 +399,16 @@
       "demo": false
     },
     {
+      "id": "72113423c7a8c1c5d3",
+      "title": "フィギュアGPフランス大会 公式練習で中井亜美らが調整 [写真特集2/22]",
+      "summary": "毎日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "スポーツ",
+      "source": "毎日新聞",
+      "published_at": "2026-10-22T10:28:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTHhwU2g4YlZRSWJGY0c2MEJleDUycGNiSlh6cnJkWHh4ZHI3bVlDNHZGRGItN09STGRCYzlaeHFXRHpCMFhMWEFLdW13bjEwcmJSSzBreFczYmFmVlVidmdUR1NlbDN4cXoydExEU05HRlNYU3A3dkFWUWJYYW9RRnAzbkdOSkk?oc=5",
+      "demo": false
+    },
+    {
       "id": "adbb3743c5b009f930",
       "title": "モンゴル草原火災、KDDI「重く受け止め」 東京都2個分が焼失",
       "summary": "毎日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -473,6 +499,16 @@
       "demo": false
     },
     {
+      "id": "ce14facf196be54c05",
+      "title": "ホンダと三菱自動車、商品相互補完で覚書締結 ホンダ向けに「トライトン」ベースのモデルを開発し2028年中に発売へ",
+      "summary": "Car Watchによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "Car Watch",
+      "published_at": "2026-10-22T08:31:48+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5kdnhqcmxhQXg3aXFLZjFYUWtTYUhxMWJSOWxxdXYyUTJkclZJU3VvZllSdXVGdmY0cm43cFNvcTQ3b2hVQ1BGQkpnRWlTMWZDMjBHR3kzSTZSNmtvOVBfN0xnQ1o?oc=5",
+      "demo": false
+    },
+    {
       "id": "9ef1c8d45230b00aed",
       "title": "【ドラフト】1位指名で青学勢2選手が競合 楽天が渡部海・ソフトバンクが鈴木泰成を引き当てる ロッテと中日がくじ外す",
       "summary": "日テレNEWS NNNによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -490,6 +526,26 @@
       "source": "めざましmedia",
       "published_at": "2026-10-22T08:30:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZRF9CQVRncU5mdUVVUmpwOVFGcXBWd0ZhX0xIdGxIQl9QaUFsRi1rX3RWcEhLTmRzV1JrZVNXWWlvT2ZUZWRtMkNXZkhGTVE1YnZB?oc=5",
+      "demo": false
+    },
+    {
+      "id": "7a229c8b66b52140d0",
+      "title": "外為17時 円相場、反発 一時156円台に急伸 株安と米債高で",
+      "summary": "日本経済新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "日本経済新聞",
+      "published_at": "2026-10-22T08:25:41+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE82Snh1Tk1IZm1xRVZtVHVNTlUwZlpvaEZtUFU4WEtyNGNZLTVrZXp1RUQtbUNod1FtWFlLVVU0TkFCSE5lNU5WTWRheFNzTjNBaEh0T3ktR1hETjl5NVM2ZGVBb2hrNElZSHYycg?oc=5",
+      "demo": false
+    },
+    {
+      "id": "2b4890bcdff6bf06de",
+      "title": "【お詫びとお知らせ】株式会社ラクスライトクラウドへの不正アクセスに伴う当社会員の個人情報漏えいについて（第２報）",
+      "summary": "新潟日報によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "新潟日報",
+      "published_at": "2026-10-22T08:20:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrejFlV1pSdlNHTFoxTm5hVnVYVlp6TUNPeTUyZVZnX3J3SWVTa2R3MGF2UVl5SWJ5RGEtWDhjWkNxeTVJNE1qZEF3eFpXY1JyaVhsNHNLNFJwd1hiaHc?oc=5",
       "demo": false
     },
     {
@@ -600,6 +656,16 @@
       "source": "ITmedia",
       "published_at": "2026-10-22T06:21:08+00:00",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5fVmVIUWNKUDl3Xzh2ckQzYTd0cVFObW9WUEowcU5sOVFjanl6dk9aQndCTzBtYTMwS3B1bjFfTkFJRUJjd3NIZEZTQUN4N041NkxJNEtySEFCYWxwOExhSTBMdGxpdGtleGc?oc=5",
+      "demo": false
+    },
+    {
+      "id": "54cd87a980778b0539",
+      "title": "参院 野党6党 消費税減税法案“特別委員会の新設求める”",
+      "summary": "NHKニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "経済",
+      "source": "NHKニュース",
+      "published_at": "2026-10-22T06:21:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5fQ05oQlNRN1ZoWlBZUkdVS1R2dDVRZk42SERpdTJDWVUxc2c2Z3FPMkUtWUxNNEwzd1gzSzFpbFhtYlJOVlk3TkZ3eGNxSTJsT3ZHRzMzUnlBVW1Wc2hz?oc=5",
       "demo": false
     },
     {
@@ -883,6 +949,16 @@
       "demo": false
     },
     {
+      "id": "107828bde2f85cc187",
+      "title": "社説：繰り返す「政治とカネ」 首相は放置するつもりか",
+      "summary": "毎日新聞によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
+      "category": "政治",
+      "source": "毎日新聞",
+      "published_at": "2026-10-21T17:01:04+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MZEt5Zm9WaTUzRXJJZVYtQ3JqWHdydXljVEtvYUc2QVNTQ0xGWmZXckxKRU1LY00xb2JxZVczZlk3WVVpeEJ1S1p6REZLSGI3bDVtTXQwTEw1RF9qVzE5UHhrSmZhOVhJ?oc=5",
+      "demo": false
+    },
+    {
       "id": "c2194dc0b8320ac3a8",
       "title": "ひろゆき氏と泉氏の政治団体、来春の統一地方選に向け候補者公募",
       "summary": "ｄメニューニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
@@ -1130,76 +1206,6 @@
       "source": "朝日新聞",
       "published_at": "2026-10-21T10:16:18+00:00",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1CTWkyVGlpR1V1Q2pIdTJCUnN6WlJCVlE0aDdlZ0dicXhZVkt1cGJDVFVnZVQtbjhrWnVQY05fdjRONG9xeTJoWGVfaXZYQV9xdXI0dU9PUEc4dEEyOGplMjRBOE4zY2M?oc=5",
-      "demo": false
-    },
-    {
-      "id": "8bcf1fb136db9b2e1b",
-      "title": "スカウト会議 ドラフト１位入札は公表せず。くじ引きは清宮幸を当てた木田ＧＭ代行",
-      "summary": "道新スポーツによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "道新スポーツ",
-      "published_at": "2026-10-21T10:14:26+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0tX0R5alE5SVp3YVZKYjdLRHZtSnhUYnF1dGhCQ1I1d0tQYmdtNDRxRF82dXUxWkVYV3p4bGR0VVhROHg0LU9sUzRGZ0FMVk1IaU9oRmIwamRxMDZoTFJwMmpR?oc=5",
-      "demo": false
-    },
-    {
-      "id": "62745fcb050544a0f1",
-      "title": "【広島】５年ぶり公表なしは“隠密ドラフト”も影響 田村スカウト部長「抽選覚悟でいくケースや、単独の投手でいくことも…」「パターンは４通りくらい」（スポーツ報知）",
-      "summary": "Yahoo!ニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "Yahoo!ニュース",
-      "published_at": "2026-10-21T10:13:58+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4X2RHTjJYMXlta21rdkJzZWFPbW1VMzNoT2hrVmtTdkkwRUwwM1pydjMwbEladFNSajlpLWJCd2RtcXdiMFdvMXNNZ2dfT2htZFdEWS1BLXpDQmxFWUV0MWpDVTRRUmtKdEJ0RDZ0VVI0ZmRLbG9BNGtXU0dQWGc?oc=5",
-      "demo": false
-    },
-    {
-      "id": "f436c688d946a1af34",
-      "title": "ニュース - チーム - ポスティングによるメジャー移籍容認を受けて佐藤輝明選手が会見を行いました",
-      "summary": "阪神タイガース 公式サイトによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "阪神タイガース 公式サイト",
-      "published_at": "2026-10-21T10:12:14+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5wOFZxaEJyZXVQaFUtYjFiWjVOb1NxYUxZR1hoS0lJSjNTWHRteFBSdFJQZl9LSjdRMDdWandNdERkU2VIUGFXWGZIeVRUOXdtSUNDclVMcmRXWmdoZG41dk5n?oc=5",
-      "demo": false
-    },
-    {
-      "id": "a50564278240cafb24",
-      "title": "イオン、一部Webサイトで不正アクセスを検知 個人情報流出など調査",
-      "summary": "ケータイ Watchによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "経済",
-      "source": "ケータイ Watch",
-      "published_at": "2026-10-21T10:09:21+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0aFBUTFE5Mk4xRE85T3h3YzEwaWViejVKVWlFdTZiRU1QSy1qblNfdWRldHowcldxaFFBYU40WUxiTDIwcFZvbkVUX044QnFqVzdhNGpscFBDekZNZk95WlpjUVRJU0E?oc=5",
-      "demo": false
-    },
-    {
-      "id": "0f7e2fa63cb067a8ca",
-      "title": "ヤクルト、ドラフト1位指名決めず 会議当日に池山監督ら交えて最終決定へ 全指名候補93人に絞り込み評価確認とランク付けを実施",
-      "summary": "サンスポによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "サンスポ",
-      "published_at": "2026-10-21T09:41:16+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTXdYMjl5ZU5hMVFpUFczUGNXY0xzTU9uOURjZ01JV2pHczVjV1Fad0c4STVEUDFuZnlkeDRLaGgtWFMyRUU0TjRENGFHS2lUT0NUX00zSGdZN2FvM1NNZ0dic1M2dzUyckVVLVN2N1EwTlAyZFF4cmZfYnZuSFAyME1rRHJobEdkRWItc0NYSnhCUm1QQnMxUdIBigFBVV95cUxQLUlhQXFFX1Fxa1RqMHlVOEY4dkN2TURoN0ZIRGROMENJX1R5RzdZTndUZnNFS0NucmJxTHd2UkhhU1hIbEtfbUFUWkZCS3RBMTVoYjJQdjBSd085anN6Tk1uamdBWng0Q0pGOWZ0bFp4WkdDNXh0eDNzV0cxaEZUaFJXS0o0dVhQOWc?oc=5",
-      "demo": false
-    },
-    {
-      "id": "b62f2c943a47ef6186",
-      "title": "全米女子切符かけラスト5戦 原英莉花はジャンボ尾崎さんの言葉を胸に",
-      "summary": "GDOゴルフニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "スポーツ",
-      "source": "GDOゴルフニュース",
-      "published_at": "2026-10-21T09:21:16+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBITVp0amtzZEQ4c1FpOVBmY3dLU2o1MHlxd3lrd0V3aHhIdDhUeXhOX3h4LVY4bWkxeG5LZVJiZy1pUWhtVlBoMmpvaC1VdU9xRkJ1VlVxYnhJdUxsWS1TRF9RRWRNMXI00gF8QVVfeXFMTU14aFRyaFltQmFqX0tIMFg1TGlHSm55NWZLY1pITG9uUGtwelFEZHZxN094RnBIaUFnY18yZUgxaEtybS1ucjZWZ3JKSldNRlJnM3BCQmRjQWVQT2RvZjBUcUdBZjI0SWlYcFgyQnUxZGp5WXB2OU9FWnhBcg?oc=5",
-      "demo": false
-    },
-    {
-      "id": "142794ae218873df4c",
-      "title": "【台風25号1か月】住宅地が約3週間浸水 異例の事態 現地のいま",
-      "summary": "NHKニュースによるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。",
-      "category": "国内",
-      "source": "NHKニュース",
-      "published_at": "2026-10-21T09:17:57+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBDZ1FxQnFxNFp5U1dMby1zWWQ4NnE1RUdHVFlYTS03U1EzYW5zbzlxbHV1NzF1MGhzODFzRU9Qa3U1X2J2bnc2a2RRNWNLQUJ3M1lzUEdEY0RrdG9oU1Aw?oc=5",
       "demo": false
     }
   ]
