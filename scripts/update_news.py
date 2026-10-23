@@ -14,6 +14,7 @@ import argparse
 import datetime as dt
 import email.utils
 import hashlib
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
@@ -31,6 +32,9 @@ UTC = dt.timezone.utc
 MAX_ARTICLES = 120
 MAX_PER_FEED = 12
 REQUEST_TIMEOUT = 18
+# Publish only a short summary furnished directly by the original publisher.
+OFFICIAL_EXCERPT_HOSTS = {'www.jpcert.or.jp'}
+EXCERPT_LENGTH = 220
 
 
 def clean(s: str, limit: int = 180) -> str:
@@ -59,11 +63,44 @@ def node_text(node, tag: str) -> str:
     return ''.join(n.itertext()).strip() if n is not None else ''
 
 
-def parse_feed(xml_bytes: bytes, category: str, name: str):
+class _PlainText(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.ignore = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ('script', 'style'):
+            self.ignore += 1
+
+    def handle_endtag(self, tag):
+        if tag in ('script', 'style') and self.ignore:
+            self.ignore -= 1
+
+    def handle_data(self, data):
+        if not self.ignore:
+            self.parts.append(data)
+
+
+def short_official_excerpt(description: str) -> str | None:
+    """Only excerpts from allowlisted self-published official RSS, not article bodies."""
+    parser = _PlainText()
+    parser.feed(description or '')
+    text = clean(' '.join(parser.parts), EXCERPT_LENGTH + 1)
+    if len(text) < 30:
+        return None
+    return text[:EXCERPT_LENGTH].rstrip() + ('…' if len(text) > EXCERPT_LENGTH else '')
+
+
+def parse_feed(xml_bytes: bytes, category: str, name: str, *, official_excerpt=False):
     """RSS 2.0 and Atom. Parse source title, title/link/pubDate only."""
     root = ET.fromstring(xml_bytes)
     entries = root.findall('./channel/item')
     atom = False
+    rdf = False
+    if not entries:
+        entries = root.findall('{http://purl.org/rss/1.0/}item')
+        rdf = bool(entries)
     if not entries:
         ns = {'a': 'http://www.w3.org/2005/Atom'}
         entries = root.findall('./a:entry', ns)
@@ -75,6 +112,12 @@ def parse_feed(xml_bytes: bytes, category: str, name: str):
             title = clean(node_text(entry, ns+'title'), 230)
             link = next((n.attrib.get('href') for n in entry.findall(ns+'link') if n.attrib.get('rel', 'alternate') == 'alternate'), '')
             published = node_text(entry, ns+'published') or node_text(entry, ns+'updated')
+            source = name
+        elif rdf:
+            ns = '{http://purl.org/rss/1.0/}'
+            title = clean(node_text(entry, ns+'title'), 230)
+            link = node_text(entry, ns+'link')
+            published = node_text(entry, '{http://purl.org/dc/elements/1.1/}date')
             source = name
         else:
             title = clean(node_text(entry, 'title'), 230)
@@ -91,7 +134,12 @@ def parse_feed(xml_bytes: bytes, category: str, name: str):
         if len(title) < 5:
             continue
         article_id = hashlib.sha256((link.split('#')[0]).encode('utf-8')).hexdigest()[:18]
-        out.append({
+        excerpt = None
+        if official_excerpt and urlparse(link).hostname in OFFICIAL_EXCERPT_HOSTS:
+            tag = '{http://purl.org/rss/1.0/}description' if rdf else (
+                '{http://www.w3.org/2005/Atom}summary' if atom else 'description')
+            excerpt = short_official_excerpt(node_text(entry, tag))
+        article = {
             'id': article_id,
             'title': title,
             'summary': f'{source}によるニュースの見出しです。詳しい内容や事実関係は元記事をご確認ください。',
@@ -100,7 +148,11 @@ def parse_feed(xml_bytes: bytes, category: str, name: str):
             'published_at': date_iso(published),
             'url': link,
             'demo': False,
-        })
+        }
+        if excerpt:
+            article['source_excerpt'] = excerpt
+            article['excerpt_kind'] = 'official_rss_excerpt'
+        out.append(article)
         if len(out) >= MAX_PER_FEED:
             break
     return out
@@ -157,7 +209,9 @@ def main(argv=None):
     else:
         for feed in feeds:
             try:
-                found = parse_feed(fetch_bytes(feed['url']), feed['category'], feed['name'])
+                found = parse_feed(fetch_bytes(feed['url']), feed['category'], feed['name'],
+                                   official_excerpt=(feed.get('official_excerpt') is True
+                                     and urlparse(feed['url']).hostname in OFFICIAL_EXCERPT_HOSTS))
                 print(f'{feed["category"]}: {len(found)} headlines')
                 if found:
                     new_items.extend(found)
