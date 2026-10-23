@@ -47,6 +47,7 @@
   <main class="container" id="main">
     <section class="headline-bar" aria-label="サイトについて"><span class="live-indicator"><span></span> DAILY EDITION</span><p>情報を追う。その先の、理解へ。</p><span class="update-note" id="update-note">データを読み込み中</span></section>
 
+    <div id="freshness-warning" class="freshness-warning" role="status" hidden></div>
     <section class="top-section" id="top-section">
       <div class="section-eyebrow"><span>THE DAILY BRIEF</span><span class="line"></span><span id="issue-date">TODAY'S EDITION</span></div>
       <div class="lead-grid">
@@ -67,6 +68,7 @@
         <aside class="sidebar">
           <div class="sidebar-box about-box"><span class="section-kicker">ABOUT NEXUS</span><h2>ニュースの先にある<br><em>「なぜ」を考える。</em></h2><p>国内外のニュースを、分野ごとに整理。出典へのリンクとともに、いま起きていることを見渡すための情報ポータルです。</p><div class="about-signature">NEXUS <span>NEWS</span></div></div>
           <div class="sidebar-box topic-box"><span class="section-kicker">EXPLORE TOPICS</span><h2>注目のカテゴリー</h2><div id="topic-list" class="topic-list"></div></div>
+          <div class="sidebar-box health-box"><span class="section-kicker">UPDATE STATUS</span><h2>ニュース更新状況</h2><p id="health-status" role="status">確認中...</p><p class="health-note">自動更新はGitHub Actionsで実行。更新に失敗した場合は古いニュースが残ることがあります。</p></div>
           <div class="sidebar-box transparency-box"><span class="section-kicker">EDITORIAL POLICY</span><h2>透明性を大切に。</h2><p>見出しと出典を明記し、元記事へのアクセスを優先します。記事本文の取得や事実確認ができていない情報は、AIによる断定的な解説に使用しません。</p><a href="./policy.html">編集方針を見る ↗</a></div>
         </aside>
       </div>

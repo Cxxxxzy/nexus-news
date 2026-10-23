@@ -122,7 +122,7 @@ def merged_items(new_items, old_items):
     for a in new_items:
         prev = previous_by_id.get(a.get('id'))
         if prev and prev.get('ai_question') and a.get('title') == prev.get('title'):
-            for field in ('ai_question', 'ai_label', 'ai_provider'):
+            for field in ('ai_question', 'ai_questions', 'ai_label', 'ai_provider', 'ai_generated_at'):
                 if field in prev:
                     a[field] = prev[field]
     combined = new_items + [a for a in old_items if isinstance(a, dict) and not a.get('demo')]

@@ -15,3 +15,10 @@
 .ai-guide strong{display:block;font-size:14px;margin-bottom:9px}
 .ai-guide p{font-size:16px;line-height:1.75;margin:0 0 10px}
 .ai-guide small{display:block;line-height:1.7;opacity:.76}
+
+
+/* v0.3 — editorial reading guide and freshness status */
+.freshness-warning{background:#fff1d6;color:#5d390e;border:1px solid #d9a54a;border-radius:10px;padding:12px 16px;margin:-16px 0 25px;font-size:12px;font-weight:700}
+.health-box{border-left:3px solid #288fa7}.health-box h2{font-size:17px;margin:13px 0 6px}.health-note{font-size:10px!important;margin-top:10px!important;opacity:.8}
+.guide-heading h3{margin:5px 0 14px;font-size:19px;line-height:1.45}.guide-list{list-style:none;margin:0;padding:0;display:grid;gap:11px}.guide-list li{display:flex;gap:13px;padding:13px 12px;background:var(--surface);border:1px solid var(--border);border-radius:9px}.guide-number{font-size:11px;font-weight:900;color:#248fb0;line-height:1.8}.guide-list strong{display:block;font-size:12px}.guide-list p{font-size:13px;line-height:1.7;margin:4px 0 0;color:var(--text-2)}.ai-guide .guide-disclaimer{font-size:11px;line-height:1.8;margin:15px 0 0;color:var(--text-2)}
+:root[data-theme="dark"] .freshness-warning{background:#493820;color:#ffe1a0;border-color:#876b36}

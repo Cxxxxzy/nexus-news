@@ -3,6 +3,12 @@
 from pathlib import Path
 import json
 import shutil
+import importlib.util
+
+spec = importlib.util.spec_from_file_location("nexus_audit", Path(__file__).resolve().parent / "audit_news.py")
+audit = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(audit)
+evaluate = audit.evaluate
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / 'dist'
@@ -20,6 +26,7 @@ def build():
     shutil.copytree(ROOT/'assets', DIST/'assets')
     (DIST/'data').mkdir()
     shutil.copy2(ROOT/'data/news.json', DIST/'data/news.json')
+    (DIST/'data/health.json').write_text(json.dumps(evaluate(data), ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(f'Built {DIST}, {len(data["articles"])} articles')
 
 if __name__ == '__main__':
