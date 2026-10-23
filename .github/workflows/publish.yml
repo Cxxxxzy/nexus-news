@@ -4,8 +4,12 @@ on:
   push:
     branches: [main]
   schedule:
-    # 06:17 JST (UTC 21:17 previous day); exact start is not guaranteed.
-    - cron: '17 21 * * *'
+    # Main: 06:17 JST; fallback check: 18:43 JST. GitHub may delay/drop scheduled runs.
+    # Every fallback run checks freshness and will NOT call the AI if already updated.
+    - cron: '17 6 * * *'
+      timezone: 'Asia/Tokyo'
+    - cron: '43 18 * * *'
+      timezone: 'Asia/Tokyo'
   workflow_dispatch:
 
 permissions:
@@ -29,13 +33,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Fetch news on schedule or manual run
+      - name: Decide whether this run needs a news refresh
         if: github.event_name != 'push'
+        id: refresh
+        run: python scripts/should_update.py >> "$GITHUB_OUTPUT"
+      - name: Fetch news if due
+        if: github.event_name != 'push' && steps.refresh.outputs.refresh == 'true'
         run: python scripts/update_news.py
-      # The AI step is optional, uses only the Cloudflare Workers Free model,
-      # and never prevents regular headline updates when its quota runs out.
-      - name: Optional free AI reading guides
-        if: github.event_name != 'push' && vars.FREE_AI_ENABLED == '1'
+      - name: Optional free AI grounded reading guides
+        if: github.event_name != 'push' && steps.refresh.outputs.refresh == 'true' && vars.FREE_AI_ENABLED == '1'
         env:
           FREE_AI_ENABLED: ${{ vars.FREE_AI_ENABLED }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -49,7 +55,7 @@ jobs:
       - name: Build site
         run: python scripts/build_site.py
       - name: Commit updated news data
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.refresh.outputs.refresh == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
