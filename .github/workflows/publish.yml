@@ -42,6 +42,8 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           AI_MAX_ITEMS: '2'
         run: python scripts/free_ai_editor.py
+      - name: Audit news quality (no API cost)
+        run: python scripts/audit_news.py
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Build site
@@ -51,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/news.json
+          git add data/news.json reports/latest-audit.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: update daily headlines"
             git push origin HEAD:main
