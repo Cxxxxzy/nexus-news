@@ -30,3 +30,6 @@
 .source-evidence > p { font-size: .92rem; line-height: 1.9; overflow-wrap: anywhere; }
 .source-evidence-note { font-size: .76rem !important; opacity: .77; }
 @media (max-width: 550px) { .source-evidence { padding: 14px; } }
+
+/* v0.5: clear provenance note, distinct from publisher-provided RSS excerpt */
+.source-origin{font-size:.79rem;line-height:1.65;margin:.3rem 0 1rem;color:var(--muted, #91a3b4);padding:.7rem .9rem;border:1px solid rgba(116,150,169,.20);border-radius:8px}

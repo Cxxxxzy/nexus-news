@@ -92,7 +92,8 @@ def short_official_excerpt(description: str) -> str | None:
     return text[:EXCERPT_LENGTH].rstrip() + ('…' if len(text) > EXCERPT_LENGTH else '')
 
 
-def parse_feed(xml_bytes: bytes, category: str, name: str, *, official_excerpt=False):
+def parse_feed(xml_bytes: bytes, category: str, name: str, *, official_excerpt=False,
+               origin_type='news_aggregator'):
     """RSS 2.0 and Atom. Parse source title, title/link/pubDate only."""
     root = ET.fromstring(xml_bytes)
     entries = root.findall('./channel/item')
@@ -148,6 +149,7 @@ def parse_feed(xml_bytes: bytes, category: str, name: str, *, official_excerpt=F
             'published_at': date_iso(published),
             'url': link,
             'demo': False,
+            'origin_type': origin_type if origin_type in ('official_rss', 'news_aggregator') else 'unverified',
         }
         if excerpt:
             article['source_excerpt'] = excerpt
@@ -174,7 +176,7 @@ def merged_items(new_items, old_items):
     for a in new_items:
         prev = previous_by_id.get(a.get('id'))
         if prev and prev.get('ai_question') and a.get('title') == prev.get('title'):
-            for field in ('ai_question', 'ai_questions', 'ai_label', 'ai_provider', 'ai_generated_at'):
+            for field in ('ai_question', 'ai_questions', 'ai_label', 'ai_provider', 'ai_generated_at', 'ai_anchors', 'ai_grounding'):
                 if field in prev:
                     a[field] = prev[field]
     combined = new_items + [a for a in old_items if isinstance(a, dict) and not a.get('demo')]
@@ -211,7 +213,9 @@ def main(argv=None):
             try:
                 found = parse_feed(fetch_bytes(feed['url']), feed['category'], feed['name'],
                                    official_excerpt=(feed.get('official_excerpt') is True
-                                     and urlparse(feed['url']).hostname in OFFICIAL_EXCERPT_HOSTS))
+                                     and urlparse(feed['url']).hostname in OFFICIAL_EXCERPT_HOSTS),
+                                   origin_type=('official_rss' if urlparse(feed['url']).hostname in OFFICIAL_EXCERPT_HOSTS
+                                     else 'news_aggregator'))
                 print(f'{feed["category"]}: {len(found)} headlines')
                 if found:
                     new_items.extend(found)

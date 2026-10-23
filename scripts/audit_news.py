@@ -36,6 +36,9 @@ def evaluate(record: dict, now=None) -> dict:
     ids = [a.get('id') for a in articles if isinstance(a, dict)]
     duplicates = len(ids) - len(set(ids))
     ai_count = sum(bool(a.get('ai_question') or a.get('ai_questions')) for a in articles if isinstance(a, dict))
+    grounded_count = sum(a.get('ai_grounding') == 'headline_anchors_v1' for a in articles if isinstance(a, dict))
+    aggregate_count = sum(a.get('origin_type') == 'news_aggregator' for a in articles if isinstance(a, dict))
+    official_origin_count = sum(a.get('origin_type') == 'official_rss' for a in articles if isinstance(a, dict))
     official_count = sum(a.get('excerpt_kind') == 'official_rss_excerpt' and bool(a.get('source_excerpt'))
                          for a in articles if isinstance(a, dict))
     newest = max((d for a in articles if isinstance(a, dict)
@@ -59,6 +62,9 @@ def evaluate(record: dict, now=None) -> dict:
         'category_counts': dict(sorted(by_category.items())),
         'ai_guide_count': ai_count,
         'official_excerpt_count': official_count,
+        'grounded_ai_guide_count': grounded_count,
+        'news_aggregator_count': aggregate_count,
+        'official_origin_count': official_origin_count,
         'newest_article_age_hours': headline_age,
         'warnings': warnings,
         'healthy_at_check': not warnings,
@@ -72,7 +78,10 @@ def render_report(result: dict) -> str:
         f'ニュース取得時刻（UTC）: {result["news_updated_at"]}',
         f'点検時の更新経過時間: {result["age_hours_at_check"]}時間',
         f'ニュース件数: {result["article_count"]}',
-        f'AI読解ガイド付きの記事: {result["ai_guide_count"]}',
+        f'AI読解ガイド付きの記事: {result["ai_guide_count"]}（旧形式を含む）',
+        f'原文照合済みの新AIガイド: {result["grounded_ai_guide_count"]}',
+        f'公式RSS経由の記事: {result["official_origin_count"]}',
+        f'ニュース集約RSS経由の記事: {result["news_aggregator_count"]}',
         f'公式RSSの短い概要付き: {result["official_excerpt_count"]}',
         f'最新記事の経過時間: {result["newest_article_age_hours"]}時間', '',
         '## カテゴリ内訳', '',
@@ -91,7 +100,7 @@ def improvement_plan(result: dict) -> str:
         next_steps.append('ニュース収集ログとRSS配信元を確認して、更新停止や件数不足を修復する')
     if result['official_excerpt_count'] == 0:
         next_steps.append('利用条件を確認できた一次情報RSSを増やす（本文の無断収集はしない）')
-    if result['ai_guide_count'] < 5:
+    if result['grounded_ai_guide_count'] < 5:
         next_steps.append('無料枠・AI実行ログを確認し、記事固有の読解ガイドを改善する')
     next_steps.append('スマホ・PCの表示速度と読みやすさを実機で確認する')
     next_steps.append('変更案は別ブランチでテストし、確認後に手動承認で公開する')
@@ -99,7 +108,9 @@ def improvement_plan(result: dict) -> str:
              'このレポートはメタデータに基づく提案です。サイト変更は自動実行しません。', '',
              '## 観測値', '',
              f'- ニュース: {result["article_count"]}件',
-             f'- AI読解ガイド: {result["ai_guide_count"]}件',
+             f'- AI読解ガイド（旧形式含む）: {result["ai_guide_count"]}件',
+             f'- 原文照合AIガイド: {result["grounded_ai_guide_count"]}件',
+             f'- 公式RSS経由の記事: {result["official_origin_count"]}件',
              f'- 公式RSSの概要: {result["official_excerpt_count"]}件',
              f'- 警告: {len(result["warnings"])}件', '', '## 次の候補', '']
     lines += [f'{i}. {step}' for i, step in enumerate(next_steps, 1)]

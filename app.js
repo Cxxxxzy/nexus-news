@@ -9,9 +9,10 @@ const datestr=(iso,opts={})=>{let d=new Date(iso);return Number.isNaN(d.getTime(
 const safeURL=s=>{try{let u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}};
 const writeStorage=(key,val)=>{try{localStorage.setItem(key,JSON.stringify(val))}catch{}};
 const readStorage=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
-const getFiltered=()=>{let a=state.articles.filter(x=>(state.category==='all'||(state.category==='saved'?state.saved.has(x.id):state.category===x.category))&&(!state.query||[x.title,x.summary,x.source_excerpt||'',...(Array.isArray(x.ai_questions)?x.ai_questions:[x.ai_question||'']),x.source,x.category].join(' ').toLowerCase().includes(state.query.toLowerCase())));return a.sort((x,y)=>(new Date(y.published_at)-new Date(x.published_at))*(state.sort==='latest'?1:-1))};
-const aiIndicator=a=>(a.ai_question||(Array.isArray(a.ai_questions)&&a.ai_questions.length))?'<span class="ai-hint" title="見出しのみを入力したAIの確認ポイント。本文を検証した解説ではありません。">AIの確認ポイント</span>':'';
-const displaySummary=a=>a.source_excerpt?'公式RSSの概要：'+a.source_excerpt.slice(0,118)+(a.source_excerpt.length>118?'…':''):a.ai_question?'AIが示す読解ポイント：'+a.ai_question:a.summary;
+const getFiltered=()=>{let a=state.articles.filter(x=>(state.category==='all'||(state.category==='saved'?state.saved.has(x.id):state.category===x.category))&&(!state.query||[x.title,x.summary,x.source_excerpt||'',...(isGrounded(x)?x.ai_questions:[]),x.source,x.category].join(' ').toLowerCase().includes(state.query.toLowerCase())));return a.sort((x,y)=>(new Date(y.published_at)-new Date(x.published_at))*(state.sort==='latest'?1:-1))};
+const isGrounded=a=>a.ai_grounding==='headline_anchors_v1'&&Array.isArray(a.ai_anchors)&&a.ai_anchors.length>0;
+const aiIndicator=a=>isGrounded(a)?'<span class="ai-hint" title="原文と照合した語句から生成した読解質問。本文を検証した解説ではありません。">AIの確認ポイント</span>':'';
+const displaySummary=a=>a.source_excerpt?'公式RSSの概要：'+a.source_excerpt.slice(0,118)+(a.source_excerpt.length>118?'…':''):isGrounded(a)?'原文照合AIの読解ポイント：'+a.ai_question:a.summary;
 const previewMeta=(a)=>`${esc(a.source||'情報源未設定')} <span>·</span> ${esc(datestr(a.published_at))}`;
 function hero(a){if(!a)return '<div class="skeleton hero-skeleton"></div>';return `<article class="feature-inner" role="button" tabindex="0" data-open="${esc(a.id)}"><div class="hero-shapes" aria-hidden="true"><i></i><i></i><i></i></div><div class="hero-content"><span class="feature-tag">${esc(a.category)} ${a.demo?'· DEMO':'· TOP STORY'}</span>${aiIndicator(a)}<h2 class="feature-title">${esc(a.title)}</h2><p class="feature-desc">${esc(displaySummary(a))}</p><div class="feature-bottom"><span>${previewMeta(a)}</span><span class="read-more">詳しく見る <span class="arrow-circle">↗</span></span></div></div></article>`}
 function side(a){return `<article class="side-inner" role="button" tabindex="0" data-open="${esc(a.id)}"><div><div class="side-top"><span class="tag-outline">${esc(ENG[a.category]||'NEWS')} / ${esc(a.category)}</span><span class="abstract-icon" aria-hidden="true">${ICONS[a.category]||'✳'}</span></div><h2>${esc(a.title)}</h2><p>${esc(displaySummary(a))}</p></div><div class="side-meta"><span>${esc(a.source)}</span><span>${esc(datestr(a.published_at))} ↗</span></div></article>`}
@@ -20,11 +21,17 @@ function render(){const a=getFiltered();$('stories-heading').innerHTML=(state.ca
 function renderTopics(){const counts=Object.fromEntries(CATEGORIES.map(c=>[c,state.articles.filter(a=>a.category===c).length]));$('topic-list').innerHTML=CATEGORIES.map(c=>`<button class="topic-item" data-topic="${esc(c)}"><span>${esc(c)}</span><span>${counts[c]} 件　↗</span></button>`).join('')}
 function renderFeatured(){let a=[...state.articles].sort((x,y)=>new Date(y.published_at)-new Date(x.published_at));$('feature-card').innerHTML=hero(a[0]);$('side-features').innerHTML=a.slice(1,3).map(side).join('')||'<div class="skeleton side-skeleton"></div>'}
 function readingGuide(a){
-  const q=Array.isArray(a.ai_questions)&&a.ai_questions.length?a.ai_questions:(a.ai_question?[a.ai_question]:[]);
+  if(!isGrounded(a))return ''; // Hide legacy v0.4 guides with unvalidated guesses.
+  const q=Array.isArray(a.ai_questions)&&a.ai_questions.length?a.ai_questions:[];
   const titles=['事実を確かめる','背景を知る','影響を考える'];
   if(!q.length)return '';
   const rows=q.slice(0,3).filter(x=>typeof x==='string'&&x.length<160).map((x,i)=>`<li><span class="guide-number">0${i+1}</span><div><strong>${titles[i]}</strong><p>${esc(x)}</p></div></li>`).join('');
-  return `<section class="ai-guide" aria-label="AI読解ガイド"><div class="guide-heading"><span class="section-kicker">AI READING GUIDE</span><h3>ニュースを深く読む${q.length}つの視点</h3></div><ol class="guide-list">${rows}</ol><p class="guide-disclaimer">AIが見出し・情報源・カテゴリから生成した質問です。元記事本文を読んだ要約や、事実確認済みの解説ではありません。</p></section>`;
+  return `<section class="ai-guide" aria-label="AI読解ガイド"><div class="guide-heading"><span class="section-kicker">AI READING GUIDE</span><h3>ニュースを深く読む${q.length}つの視点</h3></div><ol class="guide-list">${rows}</ol><p class="guide-disclaimer">AIが選んだ見出し中の語句を原文と照合し、定型文で作った確認質問です。略語の意味を推測せず、元記事本文を確認・要約したものでもありません。</p></section>`;
+}
+function sourceOrigin(a){
+ const text=a.origin_type==='official_rss'?'一次発信元の公式RSS（発信内容であり独立検証ではありません）':
+   a.origin_type==='news_aggregator'?'ニュース集約RSS（報道元の事実確認は未実施）':'RSS取得経路未確認';
+ return `<p class="source-origin">収集経路：${esc(text)}</p>`;
 }
 function originalSummary(a){
  if(a.excerpt_kind!=='official_rss_excerpt'||!a.source_excerpt)return '';
@@ -33,7 +40,7 @@ function originalSummary(a){
 function openArticle(id){
  const a=state.articles.find(x=>x.id===id);if(!a)return;
  const url=safeURL(a.url);
- $('article-body').innerHTML=`<span class="story-label">${esc(a.category)} ${a.demo?'· DEMO':''}</span><h2>${esc(a.title)}</h2><div class="article-meta"><span>情報源：${esc(a.source)}</span><span>${esc(datestr(a.published_at,{year:'numeric',hour:'2-digit',minute:'2-digit'}))}</span></div><div class="article-description">${esc(a.summary)}</div>${originalSummary(a)}${readingGuide(a)}<p class="article-note">${a.demo?'これは表示確認用のデモ記事です。実際のニュースではありません。':'このページはRSSの見出しとメタデータに基づく情報案内です。内容の真偽や詳細は必ず元記事を確認してください。'}</p><div class="article-actions">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">元記事で事実を確認する ↗</a>`:''}<button data-save="${esc(a.id)}">${state.saved.has(a.id)?'★ 保存を解除':'☆ 保存する'}</button></div>`;
+ $('article-body').innerHTML=`<span class="story-label">${esc(a.category)} ${a.demo?'· DEMO':''}</span><h2>${esc(a.title)}</h2><div class="article-meta"><span>情報源：${esc(a.source)}</span><span>${esc(datestr(a.published_at,{year:'numeric',hour:'2-digit',minute:'2-digit'}))}</span></div><div class="article-description">${esc(a.summary)}</div>${sourceOrigin(a)}${originalSummary(a)}${readingGuide(a)}<p class="article-note">${a.demo?'これは表示確認用のデモ記事です。実際のニュースではありません。':'このページはRSSの見出しとメタデータに基づく情報案内です。内容の真偽や詳細は必ず元記事を確認してください。'}</p><div class="article-actions">${url?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">元記事で事実を確認する ↗</a>`:''}<button data-save="${esc(a.id)}">${state.saved.has(a.id)?'★ 保存を解除':'☆ 保存する'}</button></div>`;
  if(!$('article-dialog').open)$('article-dialog').showModal();
 }
 function freshness(updatedAt){
